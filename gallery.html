@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery – GOMO Adventures</title>
+  <meta name="description"
+    content="A visual journey through Bhutan — landscapes, festivals, villages, and the people who call the Kingdom home." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css?v=21" />
+</head>
+
+<body>
+  <!-- ══════════════════════════ MAIN HEADER -->
+  <header class="main-header" id="mainHeader">
+    <div class="header-inner">
+      <a href="index.html" class="site-logo">
+        <img src="images/gomo-logo.png" alt="GOMO Adventures" class="header-logo-img" />
+      </a>
+
+      <div class="header-right">
+        <a href="contact.html" class="btn-reserve">Get in Touch</a>
+        <button class="header-search-toggle" id="headerSearchToggle" aria-label="Search" aria-expanded="false">
+          <i class="fas fa-search"></i>
+          <span>Search</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+          <span class="hamburger-icon"><span></span><span></span><span></span></span>
+          <span class="hamburger-label">Menu</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="header-search-bar" id="headerSearchBar">
+      <div class="header-search">
+        <input type="text" placeholder="Search for trips" id="headerSearchInput" />
+        <button class="header-search-btn" aria-label="Submit search">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile nav drawer -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <img src="images/gomo-logo.png" alt="GOMO Adventures" class="drawer-logo" />
+      <button class="drawer-close-btn" id="drawerCloseBtn" aria-label="Close menu">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    <nav class="drawer-nav">
+
+      <div class="drawer-dropdown">
+        <a href="about-us.html" class="drawer-link">About <i class="fas fa-chevron-down" style="font-size: 0.65rem; margin-left: 6px;"></i></a>
+        <div class="drawer-dropdown-menu">
+          <a href="about-us.html" class="drawer-dropdown-item">About Us</a>
+          <a href="meet-our-founder.html" class="drawer-dropdown-item">Meet Our Founder</a>
+        </div>
+      </div>
+      <div class="drawer-dropdown">
+        <a href="why-bhutan.html" class="drawer-link">Why Bhutan <i class="fas fa-chevron-down" style="font-size: 0.65rem; margin-left: 6px;"></i></a>
+        <div class="drawer-dropdown-menu">
+          <a href="why-bhutan.html" class="drawer-dropdown-item">Why Bhutan</a>
+          <a href="accommodations.html" class="drawer-dropdown-item">Accommodations</a>
+          <a href="bhutanese-food.html" class="drawer-dropdown-item">Bhutanese Foods</a>
+        </div>
+      </div>
+      <div class="drawer-dropdown">
+        <a href="index.html#our-trips" class="drawer-link">Our Trips <i class="fas fa-chevron-down" style="font-size: 0.65rem; margin-left: 6px;"></i></a>
+        <div class="drawer-dropdown-menu">
+          <a href="bhutan-kingdom-of-fungi.html" class="drawer-dropdown-item">Bhutan Kingdom of Fungi</a>
+          <a href="index.html#tour-search-of-happiness" class="drawer-dropdown-item">In Search of Happiness</a>
+          <a href="index.html#tour-live-art" class="drawer-dropdown-item">Bhutan Live Art Tour</a>
+          <a href="index.html#tour-through-lens" class="drawer-dropdown-item">Bhutan Through Lens</a>
+          <a href="index.html#tour-food-culture" class="drawer-dropdown-item">Bhutan Food &amp; Culture Tour</a>
+          <a href="index.html#tour-luxury-private" class="drawer-dropdown-item">Bhutan Luxury &amp; Private Tours</a>
+          <a href="index.html#tour-trekking-culture" class="drawer-dropdown-item">Bhutan Trekking &amp; Culture Tour</a>
+          <a href="index.html#tour-colors-autumn" class="drawer-dropdown-item">The Colors of Autumn</a>
+          <a href="index.html#tour-unique-festival" class="drawer-dropdown-item">Bhutan Unique Festival Tour</a>
+        </div>
+      </div>
+      <a href="travel-info.html" class="drawer-link">Travel Info</a>
+      <a href="gallery.html" class="drawer-link">Gallery</a>
+    </nav>
+
+    <!-- Contact info under nav links -->
+    <div class="drawer-info-bar">
+      <div class="drawer-info-item">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>Changangkha, Thimphu, Bhutan</span>
+      </div>
+      <div class="drawer-info-item">
+        <i class="far fa-envelope"></i>
+        <a href="mailto:info@gomoadventures.com">info@gomoadventures.com</a>
+      </div>
+      <div class="drawer-info-item">
+        <i class="fas fa-phone"></i>
+        <a href="tel:+97517111783">+975 17111783</a>
+      </div>
+    </div>
+
+    <div class="drawer-footer">
+      <a href="contact.html" class="btn-reserve-mobile">Get in Touch</a>
+    </div>
+  </div>
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+
+  <main>
+    <!-- ══════════════════════════ PAGE HERO -->
+    <section class="page-hero" style="background-image: url(images/dochula.jpg)">
+      <div class="page-hero-overlay"></div>
+      <div class="page-hero-content">
+        <h1 class="page-hero-title">Gallery</h1>
+        <p class="page-hero-subtitle">A visual journey through the Kingdom of Bhutan</p>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════ GALLERY -->
+    <section class="gallery-section">
+      <div class="gallery-inner">
+        <div class="gallery-filter-bar">
+          <button class="gallery-filter-btn active" data-filter="all">All</button>
+          <button class="gallery-filter-btn" data-filter="landscapes">Landscapes</button>
+          <button class="gallery-filter-btn" data-filter="culture">Culture &amp; Festivals</button>
+          <button class="gallery-filter-btn" data-filter="villages">Villages &amp; Architecture</button>
+          <button class="gallery-filter-btn" data-filter="people">People &amp; Adventure</button>
+          <button class="gallery-filter-btn" data-filter="cuisine">Cuisine</button>
+        </div>
+
+        <div class="gallery-masonry">
+          <div class="gallery-item" data-category="landscapes">
+            <img src="images/mountain.jpg" alt="Himalayan Heights" class="img-reveal" loading="lazy" />
+            <span class="gallery-item-overlay">
+              <span class="gallery-item-category">Landscapes</span>
+              <span class="gallery-item-title">Himalayan Heights</span>
+            </span>
+            <span class="gallery-zoom-icon"><i class="fas fa-expand"></i></span>
+          </div>
+
+          <div class="gallery-item" data-category="culture">
+            <img src="images/festival.jpg" alt="Tshechu Festival" class="img-reveal" loading="lazy" />
+            <span class="gallery-item-overlay">
+              <span class="gallery-item-category">Culture &amp; Festivals</span>
+              <span class="gallery-item-title">Tshechu Festival</span>
+            </span>
+            <span class="gallery-zoom-icon"><i class="fas fa-expand"></i></span>
+          </div>
+
+          <div class="gallery-item" data-category="villages">
+            <img src="images/dzong.jpg" alt="Fortress on the Cliff" class="img-reveal" loading="lazy" />
+            <span class="gallery-item-overlay">
+              <span class="gallery-item-category">Villages &amp; Architecture</span>
+              <span class="gallery-item-title">Fortress on the Cliff</span>
+            </span>
+            <span class="gallery-zoom-icon"><i class="fas fa-expand"></i></span>
+          </div>
+
+          <div class="gallery-item" data-category="people">
+            <img src="images/girl.jpg" alt="Faces of Bhutan" class="img-reveal" loading="lazy" />
+            <span class="gallery-item-overlay">
+              <span class="gallery-item-category">People &amp; Adventure</span>
+              <span class="gallery-item-title">Faces of Bhutan</span>
+            </span>
+            <span class="gallery-zoom-icon"><i class="fas fa-expand"></i></span>
+          </div>
+
+          <div class="gallery-item" data-category="culture">
+            <img src="images/maskdance.jpg" alt="Sacred Mask Dance" class="img-reveal" loading="lazy" />
+            <span class="gallery-item-overlay">
+              <span class="gallery-item-category">Culture &amp; Festivals</span>
+              <span class="gallery-item-title">Sacred Mask Dance</span>
+            </span>
+            <span class="gallery-zoom-icon"><i class="fas fa-expand"></i></span>
+          </div>
+
+          <div class="gallery-item" data-category="landscapes">
+            <img src="images/phobjikha.jpg" alt="Phobjikha Valley" class="img-reveal" loading="lazy" />
+            <span class="gallery-item-overlay">
+              <span class="gallery-item-category">Landscapes</span>
+              <span class="gallery-item-title">Phobjikha Valley</span>
+            </span>
+            <span class="gallery-zoom-icon"><i class="fas fa-expand"></i></span>
+          </div>
+
+          <div class="gallery-item" data-category="villages">
+            <img src="images/village.jpg" alt="Village Life" class="img-reveal" loading="lazy" />
+            <span class="gallery-item-overlay">
+              <span class="gallery-item-category">Villages &amp; Architecture</span>
+              <span class="gallery-item-title">Village Life</span>
+            </span>
+            <span class="gallery-zoom-icon"><i class="fas fa-expand"></i></span>
+          </div>
+
+          <div class="gallery-item" data-category="cuisine">
+            <img src="images/food.jpg" alt="Taste of Bhutan" class="img-reveal" loading="lazy" />
+            <span class="gallery-item-overlay">
+              <span class="gallery-item-category">Cuisine</span>
+              <span class="gallery-item-title">Taste of Bhutan</span>
+            </span>
+            <span class="gallery-zoom-icon"><i class="fas fa-expand"></i></span>
+          </div>
+
+          <div class="gallery-item" data-category="landscapes">
+            <img src="images/view.jpg" alt="Valley Views" class="img-reveal" loading="lazy" />
+            <span class="gallery-item-overlay">
+              <span class="gallery-item-category">Landscapes</span>
+              <span class="gallery-item-title">Valley Views</span>
+            </span>
+            <span class="gallery-zoom-icon"><i class="fas fa-expand"></i></span>
+          </div>
+
+          <div class="gallery-item" data-category="people">
+            <img src="images/trekking.jpg" alt="The Trekking Trail" class="img-reveal" loading="lazy" />
+            <span class="gallery-item-overlay">
+              <span class="gallery-item-category">People &amp; Adventure</span>
+              <span class="gallery-item-title">The Trekking Trail</span>
+            </span>
+            <span class="gallery-zoom-icon"><i class="fas fa-expand"></i></span>
+          </div>
+
+          <div class="gallery-item" data-category="culture">
+            <img src="images/flags.jpg" alt="Prayer Flags at Dawn" class="img-reveal" loading="lazy" />
+            <span class="gallery-item-overlay">
+              <span class="gallery-item-category">Culture &amp; Festivals</span>
+              <span class="gallery-item-title">Prayer Flags at Dawn</span>
+            </span>
+            <span class="gallery-zoom-icon"><i class="fas fa-expand"></i></span>
+          </div>
+
+          <div class="gallery-item" data-category="villages">
+            <img src="images/village2.jpg" alt="Farmhouses of Bhutan" class="img-reveal" loading="lazy" />
+            <span class="gallery-item-overlay">
+              <span class="gallery-item-category">Villages &amp; Architecture</span>
+              <span class="gallery-item-title">Farmhouses of Bhutan</span>
+            </span>
+            <span class="gallery-zoom-icon"><i class="fas fa-expand"></i></span>
+          </div>
+
+          <div class="gallery-item" data-category="landscapes">
+            <img src="images/mountain2.jpg" alt="Mist Over the Peaks" class="img-reveal" loading="lazy" />
+            <span class="gallery-item-overlay">
+              <span class="gallery-item-category">Landscapes</span>
+              <span class="gallery-item-title">Mist Over the Peaks</span>
+            </span>
+            <span class="gallery-zoom-icon"><i class="fas fa-expand"></i></span>
+          </div>
+
+          <div class="gallery-item" data-category="culture">
+            <img src="images/buddha.jpg" alt="Buddha Dordenma" class="img-reveal" loading="lazy" />
+            <span class="gallery-item-overlay">
+              <span class="gallery-item-category">Culture &amp; Festivals</span>
+              <span class="gallery-item-title">Buddha Dordenma</span>
+            </span>
+            <span class="gallery-zoom-icon"><i class="fas fa-expand"></i></span>
+          </div>
+
+          <div class="gallery-item" data-category="people">
+            <img src="images/angay.jpg" alt="Journey Through the Hills" class="img-reveal" loading="lazy" />
+            <span class="gallery-item-overlay">
+              <span class="gallery-item-category">People &amp; Adventure</span>
+              <span class="gallery-item-title">Journey Through the Hills</span>
+            </span>
+            <span class="gallery-zoom-icon"><i class="fas fa-expand"></i></span>
+          </div>
+
+          <div class="gallery-item" data-category="culture">
+            <img src="images/chorten.jpg" alt="Ancient Chorten" class="img-reveal" loading="lazy" />
+            <span class="gallery-item-overlay">
+              <span class="gallery-item-category">Culture &amp; Festivals</span>
+              <span class="gallery-item-title">Ancient Chorten</span>
+            </span>
+            <span class="gallery-zoom-icon"><i class="fas fa-expand"></i></span>
+          </div>
+
+          <div class="gallery-item" data-category="landscapes">
+            <img src="images/scene.jpg" alt="Highland Serenity" class="img-reveal" loading="lazy" />
+            <span class="gallery-item-overlay">
+              <span class="gallery-item-category">Landscapes</span>
+              <span class="gallery-item-title">Highland Serenity</span>
+            </span>
+            <span class="gallery-zoom-icon"><i class="fas fa-expand"></i></span>
+          </div>
+
+          <div class="gallery-item" data-category="landscapes">
+            <img src="images/mountain3.jpg" alt="Trail to the Summit" class="img-reveal" loading="lazy" />
+            <span class="gallery-item-overlay">
+              <span class="gallery-item-category">Landscapes</span>
+              <span class="gallery-item-title">Trail to the Summit</span>
+            </span>
+            <span class="gallery-zoom-icon"><i class="fas fa-expand"></i></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════ GALLERY CTA -->
+    <section class="gallery-cta">
+      <h2>Ready to See It in Person?</h2>
+      <p>Every photograph tells the story of a journey waiting for you. Let us craft your own Bhutan adventure.</p>
+      <a href="index.html#our-trips" class="btn-wt">Explore Our Trips</a>
+    </section>
+  </main>
+
+  <!-- ══════════════════════════ FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-bottom">
+      <div class="footer-bottom-inner">
+        <div class="footer-legal-links">
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Festival Dates</a>
+        </div>
+        <p class="footer-copy">
+          &copy; 2026 Gomo Adventures. All Rights Reserved. Website Designed &
+          Developed By
+          <a href="https://abit.bt/" target="_blank" rel="noopener">aBit Private Limited</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-top" id="backTop" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- ══════════════════════════ LIGHTBOX -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close image">
+      <i class="fas fa-times"></i>
+    </button>
+    <img class="lightbox-img" id="lightboxImg" src="" alt="" />
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

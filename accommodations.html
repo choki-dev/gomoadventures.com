@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Accommodations – GOMO Adventures</title>
+  <meta name="description"
+    content="From homestays and farmhouses to 5-star resorts, explore the range of accommodation options available on your Bhutan journey with GOMO Adventures." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css?v=21" />
+</head>
+
+<body>
+  <!-- ══════════════════════════ MAIN HEADER -->
+  <header class="main-header" id="mainHeader">
+    <div class="header-inner">
+      <a href="index.html" class="site-logo">
+        <img src="images/gomo-logo.png" alt="GOMO Adventures" class="header-logo-img" />
+      </a>
+
+      <div class="header-right">
+        <a href="contact.html" class="btn-reserve">Get in Touch</a>
+        <button class="header-search-toggle" id="headerSearchToggle" aria-label="Search" aria-expanded="false">
+          <i class="fas fa-search"></i>
+          <span>Search</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+          <span class="hamburger-icon"><span></span><span></span><span></span></span>
+          <span class="hamburger-label">Menu</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="header-search-bar" id="headerSearchBar">
+      <div class="header-search">
+        <input type="text" placeholder="Search for trips" id="headerSearchInput" />
+        <button class="header-search-btn" aria-label="Submit search">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile nav drawer -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <img src="images/gomo-logo.png" alt="GOMO Adventures" class="drawer-logo" />
+      <button class="drawer-close-btn" id="drawerCloseBtn" aria-label="Close menu">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    <nav class="drawer-nav">
+
+      <div class="drawer-dropdown">
+        <a href="about-us.html" class="drawer-link">About <i class="fas fa-chevron-down" style="font-size: 0.65rem; margin-left: 6px;"></i></a>
+        <div class="drawer-dropdown-menu">
+          <a href="about-us.html" class="drawer-dropdown-item">About Us</a>
+          <a href="meet-our-founder.html" class="drawer-dropdown-item">Meet Our Founder</a>
+        </div>
+      </div>
+      <div class="drawer-dropdown">
+        <a href="why-bhutan.html" class="drawer-link">Why Bhutan <i class="fas fa-chevron-down" style="font-size: 0.65rem; margin-left: 6px;"></i></a>
+        <div class="drawer-dropdown-menu">
+          <a href="why-bhutan.html" class="drawer-dropdown-item">Why Bhutan</a>
+          <a href="accommodations.html" class="drawer-dropdown-item">Accommodations</a>
+          <a href="bhutanese-food.html" class="drawer-dropdown-item">Bhutanese Foods</a>
+        </div>
+      </div>
+      <div class="drawer-dropdown">
+        <a href="index.html#our-trips" class="drawer-link">Our Trips <i class="fas fa-chevron-down" style="font-size: 0.65rem; margin-left: 6px;"></i></a>
+        <div class="drawer-dropdown-menu">
+          <a href="bhutan-kingdom-of-fungi.html" class="drawer-dropdown-item">Bhutan Kingdom of Fungi</a>
+          <a href="index.html#tour-search-of-happiness" class="drawer-dropdown-item">In Search of Happiness</a>
+          <a href="index.html#tour-live-art" class="drawer-dropdown-item">Bhutan Live Art Tour</a>
+          <a href="index.html#tour-through-lens" class="drawer-dropdown-item">Bhutan Through Lens</a>
+          <a href="index.html#tour-food-culture" class="drawer-dropdown-item">Bhutan Food &amp; Culture Tour</a>
+          <a href="index.html#tour-luxury-private" class="drawer-dropdown-item">Bhutan Luxury &amp; Private Tours</a>
+          <a href="index.html#tour-trekking-culture" class="drawer-dropdown-item">Bhutan Trekking &amp; Culture Tour</a>
+          <a href="index.html#tour-colors-autumn" class="drawer-dropdown-item">The Colors of Autumn</a>
+          <a href="index.html#tour-unique-festival" class="drawer-dropdown-item">Bhutan Unique Festival Tour</a>
+        </div>
+      </div>
+      <a href="travel-info.html" class="drawer-link">Travel Info</a>
+      <a href="gallery.html" class="drawer-link">Gallery</a>
+    </nav>
+
+    <!-- Contact info under nav links -->
+    <div class="drawer-info-bar">
+      <div class="drawer-info-item">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>Changangkha, Thimphu, Bhutan</span>
+      </div>
+      <div class="drawer-info-item">
+        <i class="far fa-envelope"></i>
+        <a href="mailto:info@gomoadventures.com">info@gomoadventures.com</a>
+      </div>
+      <div class="drawer-info-item">
+        <i class="fas fa-phone"></i>
+        <a href="tel:+97517111783">+975 17111783</a>
+      </div>
+    </div>
+
+    <div class="drawer-footer">
+      <a href="contact.html" class="btn-reserve-mobile">Get in Touch</a>
+    </div>
+  </div>
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+
+  <main>
+    <!-- ══════════════════════════ PAGE HERO -->
+    <section class="page-hero" style="background-image: url(images/view.jpg)">
+      <div class="page-hero-overlay"></div>
+      <div class="page-hero-content">
+        <h1 class="page-hero-title">Accommodations</h1>
+        <p class="page-hero-subtitle">Where You'll Rest Along the Journey</p>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════ INTRO -->
+    <section class="stay-intro-section">
+      <div class="stay-intro-inner">
+        <p class="stay-eyebrow">Plan Your Stay</p>
+        <h2 class="stay-heading">A RANGE OF OPTIONS FOR EVERY TRAVELER</h2>
+        <div class="stay-divider"></div>
+        <p class="stay-lead">
+          Accommodation in Bhutan offers a diverse range that caters to
+          various preferences and budgets. When choosing accommodation,
+          consider your preferences, budget, and desired experience —
+          Gomo Adventures can assist in selecting suitable options
+          tailored to your needs.
+        </p>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════ STAY OPTIONS -->
+    <section class="stay-story-section">
+
+      <div class="stay-panel">
+        <div class="stay-story-row">
+          <div class="stay-story-media">
+            <img src="images/phobjikha.jpg" alt="Bhutanese farmhouse in a valley" loading="lazy" />
+            <span class="stay-story-badge">01</span>
+          </div>
+          <div class="stay-story-text">
+            <span class="stay-story-chip">Best for Cultural Immersion</span>
+            <h3>Homestays &amp; Farmhouses</h3>
+            <p class="stay-story-lead">Stay with local families and experience rural Bhutanese life firsthand.</p>
+            <ul class="stay-story-list">
+              <li>Homestays provide an immersive experience, staying with local families.</li>
+              <li>Farmhouses offer a glimpse of rural life and local culture.</li>
+              <li>Both options offer insights into Bhutanese daily life, culture, and traditions.</li>
+              <li>Basic but comfortable accommodations with shared facilities and home-cooked meals.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="stay-panel stay-panel-tint">
+        <div class="stay-story-row stay-story-row-reverse">
+          <div class="stay-story-media">
+            <img src="images/scene.jpg" alt="Bhutan hotel and resort scenery" loading="lazy" />
+            <span class="stay-story-badge">02</span>
+          </div>
+          <div class="stay-story-text">
+            <span class="stay-story-chip">Best for Comfort &amp; Amenities</span>
+            <h3>Hotels &amp; Resorts</h3>
+            <p class="stay-story-lead">Upscale resorts provide retreats in picturesque settings with extensive amenities.</p>
+            <div class="stay-story-tiers">
+              <div class="stay-story-tier">
+                <span class="stay-story-tier-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                <span class="stay-story-tier-text">Comfortable with standard amenities — restaurant, Wi-Fi, and private bathrooms.</span>
+              </div>
+              <div class="stay-story-tier">
+                <span class="stay-story-tier-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                <span class="stay-story-tier-text">Enhanced comfort, spacious rooms, modern facilities, restaurants, fitness centers, and spa services.</span>
+              </div>
+              <div class="stay-story-tier">
+                <span class="stay-story-tier-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                <span class="stay-story-tier-text">Luxurious accommodations with spacious rooms, fine dining, spas, and stunning views.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="stay-panel">
+        <div class="stay-story-row">
+          <div class="stay-story-media">
+            <img src="images/trekking.jpg" alt="Budget travel and trekking in Bhutan" loading="lazy" />
+            <span class="stay-story-badge">03</span>
+          </div>
+          <div class="stay-story-text">
+            <span class="stay-story-chip">Best for Value Travelers</span>
+            <h3>Budget Hotels</h3>
+            <p class="stay-story-lead">Clean, comfortable, and cost-effective — ideal for travelers focused on exploring.</p>
+            <ul class="stay-story-list">
+              <li>Clean rooms, private bathrooms, and basic furnishings at economical rates.</li>
+              <li>Conveniently located in towns and cities for easy access to attractions.</li>
+              <li>Fewer services, but helpful staff for local recommendations.</li>
+              <li>Simple on-site meals or nearby eateries, with comfort prioritized.</li>
+            </ul>
+            <div class="stay-story-note">
+              <span class="stay-story-note-icon"><i class="fas fa-circle-info"></i></span>
+              <div>
+                <p class="stay-story-note-label">Good to Know</p>
+                <p class="stay-story-note-text">Adjust expectations for amenities and services. Suitable for travelers focused on exploring Bhutan's culture and attractions — arranged through licensed tour operators as part of travel packages.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ══════════════════════════ CLOSING CALLOUT -->
+    <section class="cta-callout">
+      <div class="cta-callout-inner">
+        <p>
+          Whether opting for immersive cultural stays, comfortable hotels,
+          or more luxurious resorts, Bhutan's accommodation options cater
+          to diverse travel styles. Accommodations are typically
+          pre-arranged through licensed tour operators as part of your
+          travel package — let Gomo Adventures help you choose the right
+          fit.
+        </p>
+        <a href="contact.html" class="btn-wt btn-wt-inverse">Get in Touch</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ══════════════════════════ FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-bottom">
+      <div class="footer-bottom-inner">
+        <div class="footer-legal-links">
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Festival Dates</a>
+        </div>
+        <p class="footer-copy">
+          &copy; 2026 Gomo Adventures. All Rights Reserved. Website Designed &
+          Developed By
+          <a href="https://abit.bt/" target="_blank" rel="noopener">aBit Private Limited</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-top" id="backTop" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- ══════════════════════════ LIGHTBOX -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close image">
+      <i class="fas fa-times"></i>
+    </button>
+    <img class="lightbox-img" id="lightboxImg" src="" alt="" />
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

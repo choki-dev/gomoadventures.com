@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bhutanese Foods – GOMO Adventures</title>
+  <meta name="description"
+    content="A taste of the Himalayan Kingdom — discover the iconic dishes of Bhutanese cuisine, from ema datshi to butter tea, with GOMO Adventures." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css?v=21" />
+</head>
+
+<body>
+  <!-- ══════════════════════════ MAIN HEADER -->
+  <header class="main-header" id="mainHeader">
+    <div class="header-inner">
+      <a href="index.html" class="site-logo">
+        <img src="images/gomo-logo.png" alt="GOMO Adventures" class="header-logo-img" />
+      </a>
+
+      <div class="header-right">
+        <a href="contact.html" class="btn-reserve">Get in Touch</a>
+        <button class="header-search-toggle" id="headerSearchToggle" aria-label="Search" aria-expanded="false">
+          <i class="fas fa-search"></i>
+          <span>Search</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+          <span class="hamburger-icon"><span></span><span></span><span></span></span>
+          <span class="hamburger-label">Menu</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="header-search-bar" id="headerSearchBar">
+      <div class="header-search">
+        <input type="text" placeholder="Search for trips" id="headerSearchInput" />
+        <button class="header-search-btn" aria-label="Submit search">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile nav drawer -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <img src="images/gomo-logo.png" alt="GOMO Adventures" class="drawer-logo" />
+      <button class="drawer-close-btn" id="drawerCloseBtn" aria-label="Close menu">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    <nav class="drawer-nav">
+
+      <div class="drawer-dropdown">
+        <a href="about-us.html" class="drawer-link">About <i class="fas fa-chevron-down" style="font-size: 0.65rem; margin-left: 6px;"></i></a>
+        <div class="drawer-dropdown-menu">
+          <a href="about-us.html" class="drawer-dropdown-item">About Us</a>
+          <a href="meet-our-founder.html" class="drawer-dropdown-item">Meet Our Founder</a>
+        </div>
+      </div>
+      <div class="drawer-dropdown">
+        <a href="why-bhutan.html" class="drawer-link">Why Bhutan <i class="fas fa-chevron-down" style="font-size: 0.65rem; margin-left: 6px;"></i></a>
+        <div class="drawer-dropdown-menu">
+          <a href="why-bhutan.html" class="drawer-dropdown-item">Why Bhutan</a>
+          <a href="accommodations.html" class="drawer-dropdown-item">Accommodations</a>
+          <a href="bhutanese-food.html" class="drawer-dropdown-item">Bhutanese Foods</a>
+        </div>
+      </div>
+      <div class="drawer-dropdown">
+        <a href="index.html#our-trips" class="drawer-link">Our Trips <i class="fas fa-chevron-down" style="font-size: 0.65rem; margin-left: 6px;"></i></a>
+        <div class="drawer-dropdown-menu">
+          <a href="bhutan-kingdom-of-fungi.html" class="drawer-dropdown-item">Bhutan Kingdom of Fungi</a>
+          <a href="index.html#tour-search-of-happiness" class="drawer-dropdown-item">In Search of Happiness</a>
+          <a href="index.html#tour-live-art" class="drawer-dropdown-item">Bhutan Live Art Tour</a>
+          <a href="index.html#tour-through-lens" class="drawer-dropdown-item">Bhutan Through Lens</a>
+          <a href="index.html#tour-food-culture" class="drawer-dropdown-item">Bhutan Food &amp; Culture Tour</a>
+          <a href="index.html#tour-luxury-private" class="drawer-dropdown-item">Bhutan Luxury &amp; Private Tours</a>
+          <a href="index.html#tour-trekking-culture" class="drawer-dropdown-item">Bhutan Trekking &amp; Culture Tour</a>
+          <a href="index.html#tour-colors-autumn" class="drawer-dropdown-item">The Colors of Autumn</a>
+          <a href="index.html#tour-unique-festival" class="drawer-dropdown-item">Bhutan Unique Festival Tour</a>
+        </div>
+      </div>
+      <a href="travel-info.html" class="drawer-link">Travel Info</a>
+      <a href="gallery.html" class="drawer-link">Gallery</a>
+    </nav>
+
+    <!-- Contact info under nav links -->
+    <div class="drawer-info-bar">
+      <div class="drawer-info-item">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>Changangkha, Thimphu, Bhutan</span>
+      </div>
+      <div class="drawer-info-item">
+        <i class="far fa-envelope"></i>
+        <a href="mailto:info@gomoadventures.com">info@gomoadventures.com</a>
+      </div>
+      <div class="drawer-info-item">
+        <i class="fas fa-phone"></i>
+        <a href="tel:+97517111783">+975 17111783</a>
+      </div>
+    </div>
+
+    <div class="drawer-footer">
+      <a href="contact.html" class="btn-reserve-mobile">Get in Touch</a>
+    </div>
+  </div>
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+
+  <main>
+    <!-- ══════════════════════════ PAGE HERO -->
+    <section class="page-hero" style="background-image: url(images/food.jpg)">
+      <div class="page-hero-overlay"></div>
+      <div class="page-hero-content">
+        <h1 class="page-hero-title">Bhutanese Foods</h1>
+        <p class="page-hero-subtitle">A Taste of the Himalayan Kingdom</p>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════ INTRO -->
+    <section class="stay-intro-section">
+      <div class="stay-intro-inner">
+        <p class="stay-eyebrow">A Culinary Adventure</p>
+        <h2 class="stay-heading">BHUTANESE CUISINE</h2>
+        <div class="stay-divider"></div>
+        <p class="stay-lead">
+          Bhutanese cuisine is a rich tapestry woven from cultural
+          traditions, local ingredients, and a unique blend of flavors.
+          It's a reflection of Bhutan's distinct culture and way of life,
+          deeply intertwined with the country's history and geography.
+          Travelers to Bhutan can expect a culinary adventure that
+          complements the country's cultural experiences.
+        </p>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════ TASTING MENU -->
+    <section class="menu-section">
+      <div class="menu-list">
+
+        <div class="menu-row">
+          <span class="menu-num">01</span>
+          <div class="menu-row-body">
+            <div class="menu-row-head">
+              <h3 class="menu-dish-name">Ema Datshi</h3>
+              <span class="menu-tag">Signature Dish</span>
+            </div>
+            <p class="menu-dish-desc">This iconic dish consists of fiery chili peppers and Bhutanese cheese, creating a spicy and creamy concoction that's a staple in Bhutanese meals.</p>
+          </div>
+        </div>
+
+        <div class="menu-row">
+          <span class="menu-num">02</span>
+          <div class="menu-row-body">
+            <div class="menu-row-head">
+              <h3 class="menu-dish-name">Red Rice</h3>
+              <span class="menu-tag">Staple Grain</span>
+            </div>
+            <p class="menu-dish-desc">Red rice, a nutrient-rich grain, is the dietary foundation. Its nutty flavor and distinct color contribute to many Bhutanese dishes.</p>
+          </div>
+        </div>
+
+        <div class="menu-row">
+          <span class="menu-num">03</span>
+          <div class="menu-row-body">
+            <div class="menu-row-head">
+              <h3 class="menu-dish-name">Doma</h3>
+              <span class="menu-tag">Social Tradition</span>
+            </div>
+            <p class="menu-dish-desc">Betel nut, leaves, and a dash of lime make up this traditional snack often enjoyed during social gatherings, embodying Bhutan's sense of hospitality.</p>
+          </div>
+        </div>
+
+        <div class="menu-row">
+          <span class="menu-num">04</span>
+          <div class="menu-row-body">
+            <div class="menu-row-head">
+              <h3 class="menu-dish-name">Momos</h3>
+              <span class="menu-tag">Popular Snack</span>
+            </div>
+            <p class="menu-dish-desc">Steamed or fried dumplings filled with meat or vegetables are a popular snack and meal option, reflecting Bhutan's proximity to Tibetan cuisine.</p>
+          </div>
+        </div>
+
+        <div class="menu-row">
+          <span class="menu-num">05</span>
+          <div class="menu-row-body">
+            <div class="menu-row-head">
+              <h3 class="menu-dish-name">Phaksha Paa</h3>
+              <span class="menu-tag">Hearty Dish</span>
+            </div>
+            <p class="menu-dish-desc">Pork cooked with spicy red chilies and radishes creates a hearty dish that speaks to Bhutan's mountainous terrain and agricultural practices.</p>
+          </div>
+        </div>
+
+        <div class="menu-row menu-row-last">
+          <span class="menu-num">06</span>
+          <div class="menu-row-body">
+            <div class="menu-row-head">
+              <h3 class="menu-dish-name">Suja</h3>
+              <span class="menu-tag">Butter Tea</span>
+            </div>
+            <p class="menu-dish-desc">Butter tea, a common drink in Bhutan, is made with tea leaves, butter, and salt. It provides warmth in the cold Himalayan climate.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════ CLOSING CALLOUT -->
+    <section class="cta-callout">
+      <div class="cta-callout-inner">
+        <p>
+          Ready to taste Bhutan for yourself? Every GOMO Adventures
+          journey brings you face-to-face with authentic Bhutanese
+          flavor — from farmhouse kitchens to mountain teahouses.
+        </p>
+        <a href="index.html#our-trips" class="btn-wt btn-wt-inverse">Explore Our Trips</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ══════════════════════════ FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-bottom">
+      <div class="footer-bottom-inner">
+        <div class="footer-legal-links">
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Festival Dates</a>
+        </div>
+        <p class="footer-copy">
+          &copy; 2026 Gomo Adventures. All Rights Reserved. Website Designed &
+          Developed By
+          <a href="https://abit.bt/" target="_blank" rel="noopener">aBit Private Limited</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-top" id="backTop" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- ══════════════════════════ LIGHTBOX -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close image">
+      <i class="fas fa-times"></i>
+    </button>
+    <img class="lightbox-img" id="lightboxImg" src="" alt="" />
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

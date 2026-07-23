@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travel Info – GOMO Adventures</title>
+  <meta name="description"
+    content="Everything to know before visiting Bhutan — tourism policy, timing, visas, culture, health, packing and more, from GOMO Adventures." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css?v=21" />
+</head>
+
+<body>
+  <!-- ══════════════════════════ MAIN HEADER -->
+  <header class="main-header" id="mainHeader">
+    <div class="header-inner">
+      <a href="index.html" class="site-logo">
+        <img src="images/gomo-logo.png" alt="GOMO Adventures" class="header-logo-img" />
+      </a>
+
+      <div class="header-right">
+        <a href="contact.html" class="btn-reserve">Get in Touch</a>
+        <button class="header-search-toggle" id="headerSearchToggle" aria-label="Search" aria-expanded="false">
+          <i class="fas fa-search"></i>
+          <span>Search</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+          <span class="hamburger-icon"><span></span><span></span><span></span></span>
+          <span class="hamburger-label">Menu</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="header-search-bar" id="headerSearchBar">
+      <div class="header-search">
+        <input type="text" placeholder="Search for trips" id="headerSearchInput" />
+        <button class="header-search-btn" aria-label="Submit search">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile nav drawer -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <img src="images/gomo-logo.png" alt="GOMO Adventures" class="drawer-logo" />
+      <button class="drawer-close-btn" id="drawerCloseBtn" aria-label="Close menu">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    <nav class="drawer-nav">
+
+      <div class="drawer-dropdown">
+        <a href="about-us.html" class="drawer-link">About <i class="fas fa-chevron-down" style="font-size: 0.65rem; margin-left: 6px;"></i></a>
+        <div class="drawer-dropdown-menu">
+          <a href="about-us.html" class="drawer-dropdown-item">About Us</a>
+          <a href="meet-our-founder.html" class="drawer-dropdown-item">Meet Our Founder</a>
+        </div>
+      </div>
+      <div class="drawer-dropdown">
+        <a href="why-bhutan.html" class="drawer-link">Why Bhutan <i class="fas fa-chevron-down" style="font-size: 0.65rem; margin-left: 6px;"></i></a>
+        <div class="drawer-dropdown-menu">
+          <a href="why-bhutan.html" class="drawer-dropdown-item">Why Bhutan</a>
+          <a href="accommodations.html" class="drawer-dropdown-item">Accommodations</a>
+          <a href="bhutanese-food.html" class="drawer-dropdown-item">Bhutanese Foods</a>
+        </div>
+      </div>
+      <div class="drawer-dropdown">
+        <a href="index.html#our-trips" class="drawer-link">Our Trips <i class="fas fa-chevron-down" style="font-size: 0.65rem; margin-left: 6px;"></i></a>
+        <div class="drawer-dropdown-menu">
+          <a href="bhutan-kingdom-of-fungi.html" class="drawer-dropdown-item">Bhutan Kingdom of Fungi</a>
+          <a href="index.html#tour-search-of-happiness" class="drawer-dropdown-item">In Search of Happiness</a>
+          <a href="index.html#tour-live-art" class="drawer-dropdown-item">Bhutan Live Art Tour</a>
+          <a href="index.html#tour-through-lens" class="drawer-dropdown-item">Bhutan Through Lens</a>
+          <a href="index.html#tour-food-culture" class="drawer-dropdown-item">Bhutan Food &amp; Culture Tour</a>
+          <a href="index.html#tour-luxury-private" class="drawer-dropdown-item">Bhutan Luxury &amp; Private Tours</a>
+          <a href="index.html#tour-trekking-culture" class="drawer-dropdown-item">Bhutan Trekking &amp; Culture Tour</a>
+          <a href="index.html#tour-colors-autumn" class="drawer-dropdown-item">The Colors of Autumn</a>
+          <a href="index.html#tour-unique-festival" class="drawer-dropdown-item">Bhutan Unique Festival Tour</a>
+        </div>
+      </div>
+      <a href="travel-info.html" class="drawer-link">Travel Info</a>
+      <a href="gallery.html" class="drawer-link">Gallery</a>
+    </nav>
+
+    <!-- Contact info under nav links -->
+    <div class="drawer-info-bar">
+      <div class="drawer-info-item">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>Changangkha, Thimphu, Bhutan</span>
+      </div>
+      <div class="drawer-info-item">
+        <i class="far fa-envelope"></i>
+        <a href="mailto:info@gomoadventures.com">info@gomoadventures.com</a>
+      </div>
+      <div class="drawer-info-item">
+        <i class="fas fa-phone"></i>
+        <a href="tel:+97517111783">+975 17111783</a>
+      </div>
+    </div>
+
+    <div class="drawer-footer">
+      <a href="contact.html" class="btn-reserve-mobile">Get in Touch</a>
+    </div>
+  </div>
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+
+  <main>
+    <!-- ══════════════════════════ PAGE HERO -->
+    <section class="page-hero" style="background-image: url(images/phobjikha.jpg)">
+      <div class="page-hero-overlay"></div>
+      <div class="page-hero-content">
+        <h1 class="page-hero-title">Travel Info</h1>
+        <p class="page-hero-subtitle">Before visiting Bhutan &mdash; what every mindful traveler should know</p>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════ TRAVEL INFO CONTENT -->
+    <section class="travel-info-section">
+      <div class="travel-info-layout">
+
+        <!-- Sticky table of contents -->
+        <aside class="ti-toc" aria-label="Table of contents">
+          <p class="ti-toc-label">On This Page</p>
+          <nav class="ti-toc-list" id="tiTocList">
+            <a class="ti-toc-link" href="#tourism-policy"><span class="ti-toc-num">01</span> Tourism Policy</a>
+            <a class="ti-toc-link" href="#timing-weather"><span class="ti-toc-num">02</span> Timing &amp; Weather</a>
+            <a class="ti-toc-link" href="#cultural-sensitivity"><span class="ti-toc-num">03</span> Cultural Sensitivity</a>
+            <a class="ti-toc-link" href="#visa-permits"><span class="ti-toc-num">04</span> Visa &amp; Permits</a>
+            <a class="ti-toc-link" href="#accommodation"><span class="ti-toc-num">05</span> Accommodation</a>
+            <a class="ti-toc-link" href="#health-safety"><span class="ti-toc-num">06</span> Health &amp; Safety</a>
+            <a class="ti-toc-link" href="#responsible-travel"><span class="ti-toc-num">07</span> Responsible Travel</a>
+            <a class="ti-toc-link" href="#trekking"><span class="ti-toc-num">08</span> Trekking &amp; Outdoor</a>
+            <a class="ti-toc-link" href="#photography"><span class="ti-toc-num">09</span> Photography Etiquette</a>
+            <a class="ti-toc-link" href="#festivals"><span class="ti-toc-num">10</span> Festivals &amp; Events</a>
+            <a class="ti-toc-link" href="#connectivity"><span class="ti-toc-num">11</span> Connectivity</a>
+            <a class="ti-toc-link" href="#language"><span class="ti-toc-num">12</span> Language</a>
+            <a class="ti-toc-link" href="#finances"><span class="ti-toc-num">13</span> Financial Considerations</a>
+            <a class="ti-toc-link" href="#packing"><span class="ti-toc-num">14</span> Packing Essentials</a>
+            <a class="ti-toc-link" href="#flexibility"><span class="ti-toc-num">15</span> Flexibility</a>
+          </nav>
+        </aside>
+
+        <!-- Content -->
+        <div class="ti-content">
+          <div class="ti-intro">
+            <p class="ti-eyebrow"><i class="fas fa-quote-left"></i> Before Visiting Bhutan</p>
+            <h2 class="ti-heading">A Checklist for the Mindful Traveler</h2>
+            <p class="ti-intro-desc">
+              As a mindful traveler, there are several important factors to consider before planning your
+              trip to Bhutan to ensure a meaningful and respectful experience. Here's what our team recommends
+              you know before you go.
+            </p>
+          </div>
+
+          <div class="ti-item" id="tourism-policy">
+            <div class="ti-item-inner">
+              <div class="ti-item-rail">
+                <span class="ti-item-num">01</span>
+              </div>
+              <div class="ti-item-content">
+                <h3 class="ti-item-title">Tourism Policy</h3>
+                <p class="ti-item-text">Bhutan follows a &ldquo;high value, low impact&rdquo; tourism policy.
+                  Visiting Bhutan requires booking through an authorized tour operator, and a minimum daily
+                  tariff covers accommodation, meals, guides, and transportation. Ensure you understand the
+                  pricing and policies before booking.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="ti-item" id="timing-weather">
+            <div class="ti-item-inner">
+              <div class="ti-item-rail">
+                <span class="ti-item-num">02</span>
+              </div>
+              <div class="ti-item-content">
+                <h3 class="ti-item-title">Timing and Weather</h3>
+                <p class="ti-item-text">Research Bhutan's seasons and weather conditions to choose the best
+                  time for your visit. Different times of the year offer unique experiences, such as festivals,
+                  trekking opportunities, or wildlife sightings.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="ti-item" id="cultural-sensitivity">
+            <div class="ti-item-inner">
+              <div class="ti-item-rail">
+                <span class="ti-item-num">03</span>
+              </div>
+              <div class="ti-item-content">
+                <h3 class="ti-item-title">Cultural Sensitivity</h3>
+                <p class="ti-item-text">Bhutan is deeply rooted in its culture and traditions. Research and
+                  understand local customs, etiquette, and dress codes to show respect to the Bhutanese way
+                  of life.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="ti-item" id="visa-permits">
+            <div class="ti-item-inner">
+              <div class="ti-item-rail">
+                <span class="ti-item-num">04</span>
+              </div>
+              <div class="ti-item-content">
+                <h3 class="ti-item-title">Visa and Permits</h3>
+                <p class="ti-item-text">Apply for a Bhutanese visa through your authorized tour operator. They
+                  will assist you in obtaining the necessary permits for the areas you plan to visit.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="ti-item" id="accommodation">
+            <div class="ti-item-inner">
+              <div class="ti-item-rail">
+                <span class="ti-item-num">05</span>
+              </div>
+              <div class="ti-item-content">
+                <h3 class="ti-item-title">Accommodation</h3>
+                <p class="ti-item-text">Bhutan offers a range of accommodations, from luxury hotels to
+                  traditional guesthouses. Research and choose options that align with your preferences and
+                  budget.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="ti-item" id="health-safety">
+            <div class="ti-item-inner">
+              <div class="ti-item-rail">
+                <span class="ti-item-num">06</span>
+              </div>
+              <div class="ti-item-content">
+                <h3 class="ti-item-title">Health and Safety</h3>
+                <p class="ti-item-text">Check if any vaccinations are required for entry to Bhutan. Carry any
+                  necessary medications and ensure you have comprehensive travel insurance that covers medical
+                  emergencies.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="ti-item" id="responsible-travel">
+            <div class="ti-item-inner">
+              <div class="ti-item-rail">
+                <span class="ti-item-num">07</span>
+              </div>
+              <div class="ti-item-content">
+                <h3 class="ti-item-title">Responsible Travel</h3>
+                <p class="ti-item-text">Understand Bhutan's commitment to environmental conservation and
+                  responsible tourism. Respect nature, minimize plastic waste, and follow guidelines for
+                  sustainable travel practices.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="ti-item" id="trekking">
+            <div class="ti-item-inner">
+              <div class="ti-item-rail">
+                <span class="ti-item-num">08</span>
+              </div>
+              <div class="ti-item-content">
+                <h3 class="ti-item-title">Trekking and Outdoor Activities</h3>
+                <p class="ti-item-text">If you're interested in trekking or outdoor activities, research the
+                  trails, difficulty levels, and necessary equipment. Consider hiring local guides for a safe
+                  and enriching experience.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="ti-item" id="photography">
+            <div class="ti-item-inner">
+              <div class="ti-item-rail">
+                <span class="ti-item-num">09</span>
+              </div>
+              <div class="ti-item-content">
+                <h3 class="ti-item-title">Photography Etiquette</h3>
+                <p class="ti-item-text">While Bhutan is a picturesque country, it's important to respect
+                  people's privacy when taking photographs, especially in religious sites and during
+                  festivals.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="ti-item" id="festivals">
+            <div class="ti-item-inner">
+              <div class="ti-item-rail">
+                <span class="ti-item-num">10</span>
+              </div>
+              <div class="ti-item-content">
+                <h3 class="ti-item-title">Cultural Events and Festivals</h3>
+                <p class="ti-item-text">Bhutan's festivals are vibrant cultural celebrations. Research the
+                  festival calendar to plan your visit around these events, but also remember to be respectful
+                  of the local participants.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="ti-item" id="connectivity">
+            <div class="ti-item-inner">
+              <div class="ti-item-rail">
+                <span class="ti-item-num">11</span>
+              </div>
+              <div class="ti-item-content">
+                <h3 class="ti-item-title">Connectivity and Communication</h3>
+                <p class="ti-item-text">Mobile network coverage may be limited in certain areas. Decide whether
+                  you want to stay connected or embrace the opportunity to disconnect during your trip.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="ti-item" id="language">
+            <div class="ti-item-inner">
+              <div class="ti-item-rail">
+                <span class="ti-item-num">12</span>
+              </div>
+              <div class="ti-item-content">
+                <h3 class="ti-item-title">Language</h3>
+                <p class="ti-item-text">While English is widely spoken in Bhutan, learning a few basic phrases
+                  in Dzongkha, the local language, can be a great way to connect with locals.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="ti-item" id="finances">
+            <div class="ti-item-inner">
+              <div class="ti-item-rail">
+                <span class="ti-item-num">13</span>
+              </div>
+              <div class="ti-item-content">
+                <h3 class="ti-item-title">Financial Considerations</h3>
+                <p class="ti-item-text">Bhutan's currency is the Bhutanese Ngultrum (BTN). Credit cards are
+                  accepted in some places, but it's advisable to carry cash, especially in remote areas.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="ti-item" id="packing">
+            <div class="ti-item-inner">
+              <div class="ti-item-rail">
+                <span class="ti-item-num">14</span>
+              </div>
+              <div class="ti-item-content">
+                <h3 class="ti-item-title">Packing Essentials</h3>
+                <p class="ti-item-text">Pack appropriately for the weather and activities you plan to engage
+                  in. Don't forget essentials like comfortable footwear, rain gear, and clothing respectful of
+                  cultural norms.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="ti-item" id="flexibility">
+            <div class="ti-item-inner">
+              <div class="ti-item-rail">
+                <span class="ti-item-num">15</span>
+              </div>
+              <div class="ti-item-content">
+                <h3 class="ti-item-title">Flexibility</h3>
+                <p class="ti-item-text">Bhutan is known for its unique and sometimes unpredictable experiences.
+                  Maintain a flexible attitude and be open to embracing the unexpected.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="ti-closing">
+            <p>By taking these considerations to heart, you'll be well-prepared to embark on a mindful
+              journey to Bhutan, appreciating its beauty, culture, and the impact of your presence on this
+              remarkable destination.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ══════════════════════════ FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-bottom">
+      <div class="footer-bottom-inner">
+        <div class="footer-legal-links">
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Festival Dates</a>
+        </div>
+        <p class="footer-copy">
+          &copy; 2026 Gomo Adventures. All Rights Reserved. Website Designed &
+          Developed By
+          <a href="https://abit.bt/" target="_blank" rel="noopener">aBit Private Limited</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-top" id="backTop" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- ══════════════════════════ LIGHTBOX -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close image">
+      <i class="fas fa-times"></i>
+    </button>
+    <img class="lightbox-img" id="lightboxImg" src="" alt="" />
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

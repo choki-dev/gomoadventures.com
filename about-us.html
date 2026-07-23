@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us – GOMO Adventures</title>
+  <meta name="description"
+    content="Learn about GOMO Adventures - your trusted travel partner for authentic Bhutan expeditions led by expert guides." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css?v=21" />
+</head>
+
+<body>
+  <!-- ══════════════════════════ MAIN HEADER -->
+  <header class="main-header" id="mainHeader">
+    <div class="header-inner">
+      <a href="index.html" class="site-logo">
+        <img src="images/gomo-logo.png" alt="GOMO Adventures" class="header-logo-img" />
+      </a>
+
+      <div class="header-right">
+        <a href="contact.html" class="btn-reserve">Get in Touch</a>
+        <button class="header-search-toggle" id="headerSearchToggle" aria-label="Search" aria-expanded="false">
+          <i class="fas fa-search"></i>
+          <span>Search</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+          <span class="hamburger-icon"><span></span><span></span><span></span></span>
+          <span class="hamburger-label">Menu</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="header-search-bar" id="headerSearchBar">
+      <div class="header-search">
+        <input type="text" placeholder="Search for trips" id="headerSearchInput" />
+        <button class="header-search-btn" aria-label="Submit search">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile nav drawer -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <img src="images/gomo-logo.png" alt="GOMO Adventures" class="drawer-logo" />
+      <button class="drawer-close-btn" id="drawerCloseBtn" aria-label="Close menu">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    <nav class="drawer-nav">
+
+      <div class="drawer-dropdown">
+        <a href="about-us.html" class="drawer-link">About <i class="fas fa-chevron-down" style="font-size: 0.65rem; margin-left: 6px;"></i></a>
+        <div class="drawer-dropdown-menu">
+          <a href="about-us.html" class="drawer-dropdown-item">About Us</a>
+          <a href="meet-our-founder.html" class="drawer-dropdown-item">Meet Our Founder</a>
+        </div>
+      </div>
+      <div class="drawer-dropdown">
+        <a href="why-bhutan.html" class="drawer-link">Why Bhutan <i class="fas fa-chevron-down" style="font-size: 0.65rem; margin-left: 6px;"></i></a>
+        <div class="drawer-dropdown-menu">
+          <a href="why-bhutan.html" class="drawer-dropdown-item">Why Bhutan</a>
+          <a href="accommodations.html" class="drawer-dropdown-item">Accommodations</a>
+          <a href="bhutanese-food.html" class="drawer-dropdown-item">Bhutanese Foods</a>
+        </div>
+      </div>
+      <div class="drawer-dropdown">
+        <a href="index.html#our-trips" class="drawer-link">Our Trips <i class="fas fa-chevron-down" style="font-size: 0.65rem; margin-left: 6px;"></i></a>
+        <div class="drawer-dropdown-menu">
+          <a href="bhutan-kingdom-of-fungi.html" class="drawer-dropdown-item">Bhutan Kingdom of Fungi</a>
+          <a href="index.html#tour-search-of-happiness" class="drawer-dropdown-item">In Search of Happiness</a>
+          <a href="index.html#tour-live-art" class="drawer-dropdown-item">Bhutan Live Art Tour</a>
+          <a href="index.html#tour-through-lens" class="drawer-dropdown-item">Bhutan Through Lens</a>
+          <a href="index.html#tour-food-culture" class="drawer-dropdown-item">Bhutan Food &amp; Culture Tour</a>
+          <a href="index.html#tour-luxury-private" class="drawer-dropdown-item">Bhutan Luxury &amp; Private Tours</a>
+          <a href="index.html#tour-trekking-culture" class="drawer-dropdown-item">Bhutan Trekking &amp; Culture Tour</a>
+          <a href="index.html#tour-colors-autumn" class="drawer-dropdown-item">The Colors of Autumn</a>
+          <a href="index.html#tour-unique-festival" class="drawer-dropdown-item">Bhutan Unique Festival Tour</a>
+        </div>
+      </div>
+      <a href="travel-info.html" class="drawer-link">Travel Info</a>
+      <a href="gallery.html" class="drawer-link">Gallery</a>
+    </nav>
+
+    <!-- Contact info under nav links -->
+    <div class="drawer-info-bar">
+      <div class="drawer-info-item">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>Changangkha, Thimphu, Bhutan</span>
+      </div>
+      <div class="drawer-info-item">
+        <i class="far fa-envelope"></i>
+        <a href="mailto:info@gomoadventures.com">info@gomoadventures.com</a>
+      </div>
+      <div class="drawer-info-item">
+        <i class="fas fa-phone"></i>
+        <a href="tel:+97517111783">+975 17111783</a>
+      </div>
+    </div>
+
+    <div class="drawer-footer">
+      <a href="contact.html" class="btn-reserve-mobile">Get in Touch</a>
+    </div>
+  </div>
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+
+  <main>
+    <!-- ══════════════════════════ PAGE HERO -->
+    <section class="page-hero" style="background-image: url(images/mountain2.jpg)">
+      <div class="page-hero-overlay"></div>
+      <div class="page-hero-content">
+        <h1 class="page-hero-title">About Us</h1>
+        <p class="page-hero-subtitle">Discover the story behind GOMO Adventures</p>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════ ABOUT CONTENT -->
+    <section class="about-content">
+      <div class="about-inner">
+        <div class="about-text-col">
+          <p class="about-first">Gomo Adventures is a Bhutanese company established in 2008 and licensed by the Tourism Council of Bhutan. The company is named after Bhutan's protecting deity, with its primary office located on Wogzin Lam in Thimphu City, Bhutan.</p>
+          <p>The founder of Gomo Adventures, Ugyen Wangchuk, initiated his journey as a cultural tour guide in 2002. After six years, he envisioned and actualized his own enterprise, grounded in his values, knowledge, skills, and strengths. The company's name pays homage to the guardian deity of Bhutan.</p>
+          <p>Beyond his role with Gomo Adventures, Ugyen Wangchuk is an accomplished author and photographer. His publications, such as the <em>Authentic Bhutanese Cookbook</em> and <em>Bhutan Portrait and Landscape</em>, reflect his dedication to portraying his cherished homeland through words and images. His photographic work often serves as inspiration for Bhutanese postcards. He is presently crafting a coffee table book titled <em>The Essence of Bhutan</em>, scheduled for release later this year.</p>
+          <p>Ugyen Wangchuk is also deeply committed to environmental preservation and ardently supports responsible tourism. A prime example is the development of Bhutan's inaugural eco-friendly lodge (<a href="http://www.bhutanecolodge.com" target="_blank" rel="noopener">www.bhutanecolodge.com</a>). Currently, he is engaged in establishing Community Based Tourism in the Punakha region, a pivotal stride toward sustainable consumption and production in Bhutan. Ugyen Wangchuk's unwavering dedication to responsible tourism and environmental conservation drives the essence of Gomo Adventures.</p>
+          <p>The inception of this company is rooted in the founder's firsthand experience as a tour guide. Ugyen Wangchuk's transformation from a cultural tour guide in 2002 to the architect of Gomo Adventures after six years was driven by his values, knowledge, skills, and strengths.</p>
+          <p>Ugyen's fervor for photography and writing about his cherished homeland is palpable. His literary creations, including the <em>Authentic Bhutanese Cookbook</em> and <em>Bhutan Portrait and Landscape</em>, echo his profound connection to his homeland. His photographic works have also found their way onto numerous postcards across Bhutan. He is presently compiling <em>The Essence of Bhutan</em>, a coffee table book slated for release later this year.</p>
+          <p>Ugyen Wangchuk, the driving force behind Gomo Adventures, is equally passionate about environmental preservation and fervently advocates for responsible tourism. This commitment is exemplified through the establishment of Bhutan's first eco-friendly lodge (<a href="http://www.bhutanecolodge.com" target="_blank" rel="noopener">www.bhutanecolodge.com</a>) and his ongoing endeavors in developing Community Based Tourism in the Punakha region—a significant stride towards sustainable practices in Bhutan's consumption and production.</p>
+        </div>
+        <div class="about-image-col">
+          <div class="about-image-main">
+            <img src="images/phobjikha.jpg" alt="Bhutan Landscape" loading="lazy" />
+          </div>
+          <div class="about-image-secondary">
+            <img src="images/dzong.jpg" alt="Bhutan Dzong" loading="lazy" />
+          </div>
+          <div class="about-highlight-card">
+            <span class="highlight-year">2008</span>
+            <span class="highlight-text">Established in Bhutan</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════ OUR VALUES -->
+    <section class="values-section">
+      <div class="values-inner">
+        <h2 class="section-heading-centered">WHY CHOOSE GOMO ADVENTURES FOR YOUR TRAVELS?</h2>
+        <div class="values-grid">
+          <div class="value-card">
+            <div class="value-icon">
+              <i class="fas fa-globe"></i>
+            </div>
+            <h3 class="value-title">Experienced Global Team</h3>
+            <p class="value-text">Operated by a seasoned team and a dedicated network of global partners.</p>
+          </div>
+          <div class="value-card">
+            <div class="value-icon">
+              <i class="fas fa-mountain"></i>
+            </div>
+            <h3 class="value-title">Tailored Himalayan Adventures</h3>
+            <p class="value-text">Designs and guides meticulously customized tours, trekking, and expeditions across Bhutan.</p>
+          </div>
+          <div class="value-card">
+            <div class="value-icon">
+              <i class="fas fa-earth-americas"></i>
+            </div>
+            <h3 class="value-title">Global Clientele</h3>
+            <p class="value-text">Orchestrates travel packages for diverse guests from all around the world.</p>
+          </div>
+          <div class="value-card">
+            <div class="value-icon">
+              <i class="fas fa-route"></i>
+            </div>
+            <h3 class="value-title">Fully Customizable Itineraries</h3>
+            <p class="value-text">Offers highly flexible and personalized trips adapted to match precise guest preferences.</p>
+          </div>
+          <div class="value-card">
+            <div class="value-icon">
+              <i class="fas fa-landmark"></i>
+            </div>
+            <h3 class="value-title">Cultural &amp; Scenic Immersion</h3>
+            <p class="value-text">Delivers intimate experiences that immerse travelers deeply into Bhutan's distinct culture and stunning landscapes.</p>
+          </div>
+          <div class="value-card">
+            <div class="value-icon">
+              <i class="fas fa-camera"></i>
+            </div>
+            <h3 class="value-title">Specialized Focus Areas</h3>
+            <p class="value-text">Curates journeys based on specific interests, including photography, cultural exploration, spiritual quests, artistic pursuits, and trekking.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════ OUR TEAM -->
+    <section class="partner-team-section">
+      <div class="partner-team-inner">
+        <h2 class="section-heading-centered">OUR PARTNER & TEAM</h2>
+        <div class="team-grid">
+          <div class="team-card">
+            <div class="team-image-wrapper">
+              <img src="images/ugyen wangchuk.jpg" alt="Punap Ugyen Wangchuk" class="team-photo" loading="lazy" />
+              <div class="team-overlay">
+                <h4 class="team-overlay-name">Punap Ugyen Wangchuk</h4>
+                <p class="team-overlay-role">Founder & Lead Guide</p>
+                <p class="team-overlay-company">GOMO Adventures</p>
+                <p class="team-overlay-location">Thimphu, Bhutan</p>
+                <p class="team-overlay-desc">Punap Ugyen Wangchuk, popularly Punap Ugyen, is a monk-turned-veteran tour guide with 20+ years of experience in Bhutanese tourism.</p>
+                <a href="#" class="team-read-more">Read More</a>
+                <div class="team-socials">
+                  <a href="#" class="team-social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" class="team-social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="#" class="team-social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                  <a href="#" class="team-social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="team-card">
+            <div class="team-image-wrapper">
+              <div class="team-photo-placeholder">
+                <i class="fas fa-user"></i>
+              </div>
+              <div class="team-overlay">
+                <h4 class="team-overlay-name">Tashi Dorji</h4>
+                <p class="team-overlay-role">Senior Guide</p>
+                <p class="team-overlay-company">GOMO Adventures</p>
+                <p class="team-overlay-location">Thimphu, Bhutan</p>
+                <p class="team-overlay-desc">Expert in cultural tours with deep knowledge of Bhutanese traditions and heritage.</p>
+                <a href="#" class="team-read-more">Read More</a>
+                <div class="team-socials">
+                  <a href="#" class="team-social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" class="team-social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="#" class="team-social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                  <a href="#" class="team-social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="team-card">
+            <div class="team-image-wrapper">
+              <div class="team-photo-placeholder">
+                <i class="fas fa-user"></i>
+              </div>
+              <div class="team-overlay">
+                <h4 class="team-overlay-name">Karma Wangmo</h4>
+                <p class="team-overlay-role">Operations Manager</p>
+                <p class="team-overlay-company">GOMO Adventures</p>
+                <p class="team-overlay-location">Thimphu, Bhutan</p>
+                <p class="team-overlay-desc">Ensures seamless travel experiences and coordinates all logistics for our guests.</p>
+                <a href="#" class="team-read-more">Read More</a>
+                <div class="team-socials">
+                  <a href="#" class="team-social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" class="team-social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="#" class="team-social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                  <a href="#" class="team-social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    </main>
+
+  <!-- ══════════════════════════ FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-bottom">
+      <div class="footer-bottom-inner">
+        <div class="footer-legal-links">
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Festival Dates</a>
+        </div>
+        <p class="footer-copy">
+          &copy; 2026 Gomo Adventures. All Rights Reserved. Website Designed &
+          Developed By
+          <a href="https://abit.bt/" target="_blank" rel="noopener">aBit Private Limited</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-top" id="backTop" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- ══════════════════════════ LIGHTBOX -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close image">
+      <i class="fas fa-times"></i>
+    </button>
+    <img class="lightbox-img" id="lightboxImg" src="" alt="" />
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
