@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap"
       rel="stylesheet"
     />
     <link
@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="style.css?v=21" />
   </head>
 
-  <body class="has-hero-header">
+  <body>
     <!-- ══════════════════════════ MAIN HEADER -->
     <header class="main-header" id="mainHeader">
       <div class="header-inner">
@@ -34,16 +34,6 @@
         </a>
 
         <div class="header-right">
-          <a href="contact.html" class="btn-reserve">Get in Touch</a>
-          <button
-            class="header-search-toggle"
-            id="headerSearchToggle"
-            aria-label="Search"
-            aria-expanded="false"
-          >
-            <i class="fas fa-search"></i>
-            <span>Search</span>
-          </button>
           <button
             class="hamburger"
             id="hamburger"
@@ -54,19 +44,6 @@
               ><span></span><span></span><span></span
             ></span>
             <span class="hamburger-label">Menu</span>
-          </button>
-        </div>
-      </div>
-
-      <div class="header-search-bar" id="headerSearchBar">
-        <div class="header-search">
-          <input
-            type="text"
-            placeholder="Search for trips"
-            id="headerSearchInput"
-          />
-          <button class="header-search-btn" aria-label="Submit search">
-            <i class="fas fa-search"></i>
           </button>
         </div>
       </div>
@@ -86,6 +63,16 @@
           aria-label="Close menu"
         >
           <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="drawer-search">
+        <input
+          type="text"
+          placeholder="Search for trips"
+          id="headerSearchInput"
+        />
+        <button class="drawer-search-btn" aria-label="Submit search">
+          <i class="fas fa-search"></i>
         </button>
       </div>
       <nav class="drawer-nav">
@@ -195,57 +182,15 @@
         id="hero"
         style="background-image: url(images/dzong.jpg)"
       >
-        <div class="hero-video-bg" aria-hidden="true">
-          <video autoplay muted loop playsinline preload="auto">
-            <source
-              src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
-              type="video/mp4"
-            />
-          </video>
-        </div>
-
-        <div class="hero-slide active">
-          <div class="hero-dark-overlay"></div>
-          <div class="hero-text-block">
-            <h1 class="hero-headline">
-              We offer personalized and tailored made trips
-            </h1>
-            <a href="#our-trips" class="hero-cta-link"
-              >Find Your Next Trips <i class="fas fa-chevron-right"></i
-            ></a>
-          </div>
-        </div>
-
-        <div class="hero-slide">
-          <div class="hero-dark-overlay"></div>
-          <div class="hero-text-block">
-            <h1 class="hero-headline">You are in right hand</h1>
-            <a href="about-us.html" class="hero-cta-link"
-              >About Us <i class="fas fa-chevron-right"></i
-            ></a>
-          </div>
-        </div>
-
-        <div class="hero-slide">
-          <div class="hero-dark-overlay"></div>
-          <div class="hero-text-block">
-            <h1 class="hero-headline">
-              We offer valued added tours and experience
-            </h1>
-            <a href="#our-trips" class="hero-cta-link"
-              >View Our Tours <i class="fas fa-chevron-right"></i
-            ></a>
-          </div>
-        </div>
-
-        <div class="hero-slide">
-          <div class="hero-dark-overlay"></div>
-          <div class="hero-text-block">
-            <h1 class="hero-headline">A stress-free travel experiences</h1>
-            <a href="#our-trips" class="hero-cta-link"
-              >Find Your Next Trips <i class="fas fa-chevron-right"></i
-            ></a>
-          </div>
+        <div class="hero-dark-overlay"></div>
+        <div class="hero-text-block">
+          <h1 class="hero-headline">
+            Bhutan, through the eyes of<br />
+            a monk who became a photographer
+          </h1>
+          <a href="#our-trips" class="hero-cta-link"
+            >Plan Your Journey <i class="fas fa-chevron-right"></i
+          ></a>
         </div>
       </section>
 
@@ -564,374 +509,218 @@
       <section class="tours-section" id="our-trips">
         <div class="tours-inner">
           <div class="tours-heading">
-            <h2 class="img-reveal">Exclusive Small Group Journeys</h2>
-            <h3 class="img-reveal">
-              We offer nine signature journeys in Bhutan, each thoughtfully
-              crafted and personally led by our founder and lead guide, Ugyen
-              Wangchuk, for truly immersive, private travel experiences.
-            </h3>
+            <h2 class="tours-heading-title img-reveal">The Journeys</h2>
+            <p class="tours-heading-subtitle img-reveal">
+              Bhutan Kingdom of Fungi, In Search of Happiness, Bhutan Live Art
+              Tour, Bhutan Through Lens, Bhutan Food &amp; Culture Tour,
+              Bhutan Luxury &amp; Private Tours, Bhutan Trekking &amp; Culture
+              Tour, The Colors of Autumn, Bhutan Unique Festival Tour
+            </p>
           </div>
 
           <div class="tours-cards">
-            <a
-              href="bhutan-kingdom-of-fungi.html"
-              class="trip-card img-reveal"
-              id="tour-kingdom-of-fungi"
-            >
-              <span class="trip-card-media">
+            <article class="trip-card img-reveal" id="tour-kingdom-of-fungi">
+              <a href="bhutan-kingdom-of-fungi.html" class="trip-card-media">
                 <img
                   src="images/village.jpg"
                   alt="Bhutan Kingdom of Fungi"
                   loading="lazy"
                 />
-              </span>
-              <span class="trip-card-body">
-                <span class="trip-card-name">Bhutan Kingdom of Fungi</span>
-                <span class="trip-card-sub"
-                  >Mushroom &amp; Photography Tour</span
-                >
-                <span class="trip-card-meta">
-                  <span class="trip-card-meta-item"
-                    ><i class="fas fa-compass" aria-hidden="true"></i
-                    >13 - 23 AUG</span
-                  >
-                  <span class="trip-card-meta-item"
-                    ><i class="fas fa-calendar-alt" aria-hidden="true"></i
-                    >11 DAYS</span
-                  >
-                </span>
-                <span class="trip-card-footer">
-                  <span class="trip-card-price">
-                    <span class="trip-card-price-label"
-                      >Starting from</span
-                    >
-                    <span class="trip-card-price-value"
-                      >$3,495 <small>/ per person</small></span
-                    >
-                  </span>
-                  <span class="trip-card-btn">View Trip Details</span>
-                </span>
-              </span>
-            </a>
+              </a>
+              <div class="trip-card-body">
+                <h3 class="trip-card-name">Bhutan Kingdom of Fungi</h3>
+                <p class="trip-card-desc">
+                  This 11-day journey through Bhutan's forests blends wild
+                  mushroom foraging with guided photography, from $3,495 per
+                  person, departing 13&ndash;23 August.
+                </p>
+                <div class="trip-card-actions">
+                  <a href="bhutan-kingdom-of-fungi.html" class="trip-card-btn-outline">Discover more</a>
+                  <a href="contact.html" class="trip-card-btn-outline">Plan your journey</a>
+                </div>
+              </div>
+            </article>
 
-            <a
-              href="#tour-search-of-happiness"
-              class="trip-card img-reveal"
-              id="tour-search-of-happiness"
-            >
-              <span class="trip-card-media">
+            <article class="trip-card img-reveal" id="tour-search-of-happiness">
+              <a href="#tour-search-of-happiness" class="trip-card-media">
                 <img
                   src="images/angay.jpg"
                   alt="In Search of Happiness"
                   loading="lazy"
                 />
-              </span>
-              <span class="trip-card-body">
-                <span class="trip-card-name">In Search of Happiness</span>
-                <span class="trip-card-sub">Spiritual &amp; Culture Tour</span>
-                <span class="trip-card-meta">
-                  <span class="trip-card-meta-item"
-                    ><i class="fas fa-compass" aria-hidden="true"></i
-                    >APRIL - AUGUST</span
-                  >
-                  <span class="trip-card-meta-item"
-                    ><i class="fas fa-calendar-alt" aria-hidden="true"></i
-                    >18 DAYS</span
-                  >
-                </span>
-                <span class="trip-card-footer">
-                  <span class="trip-card-price">
-                    <span class="trip-card-price-label"
-                      >Starting from</span
-                    >
-                    <span class="trip-card-price-value"
-                      >$4,295 <small>/ per person</small></span
-                    >
-                  </span>
-                  <span class="trip-card-btn">View Trip Details</span>
-                </span>
-              </span>
-            </a>
+              </a>
+              <div class="trip-card-body">
+                <h3 class="trip-card-name">In Search of Happiness</h3>
+                <p class="trip-card-desc">
+                  This 18-day spiritual and cultural odyssey crosses Bhutan's
+                  dzongs, monasteries and sacred valleys, from $4,295 per
+                  person, departing April to August.
+                </p>
+                <div class="trip-card-actions">
+                  <a href="#tour-search-of-happiness" class="trip-card-btn-outline">Discover more</a>
+                  <a href="contact.html" class="trip-card-btn-outline">Plan your journey</a>
+                </div>
+              </div>
+            </article>
 
-            <a
-              href="#tour-live-art"
-              class="trip-card img-reveal"
-              id="tour-live-art"
-            >
-              <span class="trip-card-media">
+            <article class="trip-card img-reveal" id="tour-live-art">
+              <a href="#tour-live-art" class="trip-card-media">
                 <img
                   src="images/dochula.jpg"
                   alt="Bhutan Live Art Tour"
                   loading="lazy"
                 />
-              </span>
-              <span class="trip-card-body">
-                <span class="trip-card-name">Bhutan Live Art Tour</span>
-                <span class="trip-card-sub">Reflect and cherish</span>
-                <span class="trip-card-meta">
-                  <span class="trip-card-meta-item"
-                    ><i class="fas fa-compass" aria-hidden="true"></i
-                    >YEAR ROUND</span
-                  >
-                  <span class="trip-card-meta-item"
-                    ><i class="fas fa-calendar-alt" aria-hidden="true"></i
-                    >10 DAYS</span
-                  >
-                </span>
-                <span class="trip-card-footer">
-                  <span class="trip-card-price">
-                    <span class="trip-card-price-label"
-                      >Starting from</span
-                    >
-                    <span class="trip-card-price-value"
-                      >$2,895 <small>/ per person</small></span
-                    >
-                  </span>
-                  <span class="trip-card-btn">View Trip Details</span>
-                </span>
-              </span>
-            </a>
+              </a>
+              <div class="trip-card-body">
+                <h3 class="trip-card-name">Bhutan Live Art Tour</h3>
+                <p class="trip-card-desc">
+                  This 10-day journey into Bhutan's living arts and crafts
+                  traditions is guided by local masters, from $2,895 per
+                  person, departing year-round.
+                </p>
+                <div class="trip-card-actions">
+                  <a href="#tour-live-art" class="trip-card-btn-outline">Discover more</a>
+                  <a href="contact.html" class="trip-card-btn-outline">Plan your journey</a>
+                </div>
+              </div>
+            </article>
 
-            <a
-              href="#tour-through-lens"
-              class="trip-card img-reveal"
-              id="tour-through-lens"
-            >
-              <span class="trip-card-media">
+            <article class="trip-card img-reveal" id="tour-through-lens">
+              <a href="#tour-through-lens" class="trip-card-media">
                 <img
                   src="images/scene.jpg"
                   alt="Bhutan Through Lens"
                   loading="lazy"
                 />
-              </span>
-              <span class="trip-card-body">
-                <span class="trip-card-name">Bhutan Through Lens</span>
-                <span class="trip-card-sub">The colours of Spring</span>
-                <span class="trip-card-meta">
-                  <span class="trip-card-meta-item"
-                    ><i class="fas fa-compass" aria-hidden="true"></i
-                    >MARCH / APRIL</span
-                  >
-                  <span class="trip-card-meta-item"
-                    ><i class="fas fa-calendar-alt" aria-hidden="true"></i
-                    >13 DAYS</span
-                  >
-                </span>
-                <span class="trip-card-footer">
-                  <span class="trip-card-price">
-                    <span class="trip-card-price-label"
-                      >Starting from</span
-                    >
-                    <span class="trip-card-price-value"
-                      >$3,795 <small>/ per person</small></span
-                    >
-                  </span>
-                  <span class="trip-card-btn">View Trip Details</span>
-                </span>
-              </span>
-            </a>
+              </a>
+              <div class="trip-card-body">
+                <h3 class="trip-card-name">Bhutan Through Lens</h3>
+                <p class="trip-card-desc">
+                  This 13-day photography tour captures Bhutan's spring
+                  landscapes, festivals and everyday life, from $3,795 per
+                  person, departing March to April.
+                </p>
+                <div class="trip-card-actions">
+                  <a href="#tour-through-lens" class="trip-card-btn-outline">Discover more</a>
+                  <a href="contact.html" class="trip-card-btn-outline">Plan your journey</a>
+                </div>
+              </div>
+            </article>
 
-            <a
-              href="#tour-food-culture"
-              class="trip-card img-reveal"
-              id="tour-food-culture"
-            >
-              <span class="trip-card-media">
+            <article class="trip-card img-reveal" id="tour-food-culture">
+              <a href="#tour-food-culture" class="trip-card-media">
                 <img
                   src="images/food.jpg"
                   alt="Bhutan Food and Culture Tour"
                   loading="lazy"
                 />
-              </span>
-              <span class="trip-card-body">
-                <span class="trip-card-name"
-                  >Bhutan Food &amp; Culture Tour</span
-                >
-                <span class="trip-card-sub">Culinary Discovery</span>
-                <span class="trip-card-meta">
-                  <span class="trip-card-meta-item"
-                    ><i class="fas fa-compass" aria-hidden="true"></i
-                    >AUGUST &amp; SEPTEMBER</span
-                  >
-                  <span class="trip-card-meta-item"
-                    ><i class="fas fa-calendar-alt" aria-hidden="true"></i
-                    >14 DAYS</span
-                  >
-                </span>
-                <span class="trip-card-footer">
-                  <span class="trip-card-price">
-                    <span class="trip-card-price-label"
-                      >Starting from</span
-                    >
-                    <span class="trip-card-price-value"
-                      >$4,095 <small>/ per person</small></span
-                    >
-                  </span>
-                  <span class="trip-card-btn">View Trip Details</span>
-                </span>
-              </span>
-            </a>
+              </a>
+              <div class="trip-card-body">
+                <h3 class="trip-card-name">Bhutan Food &amp; Culture Tour</h3>
+                <p class="trip-card-desc">
+                  This 14-day culinary journey moves through Bhutan's
+                  markets, farmhouses and family kitchens, from $4,095 per
+                  person, departing August to September.
+                </p>
+                <div class="trip-card-actions">
+                  <a href="#tour-food-culture" class="trip-card-btn-outline">Discover more</a>
+                  <a href="contact.html" class="trip-card-btn-outline">Plan your journey</a>
+                </div>
+              </div>
+            </article>
 
-            <a
-              href="contact.html"
-              class="trip-card img-reveal"
-              id="tour-luxury-private"
-            >
-              <span class="trip-card-media">
+            <article class="trip-card img-reveal" id="tour-luxury-private">
+              <a href="contact.html" class="trip-card-media">
                 <img
                   src="images/view.jpg"
                   alt="Bhutan Luxury and Private Tours"
                   loading="lazy"
                 />
-              </span>
-              <span class="trip-card-body">
-                <span class="trip-card-name"
-                  >Bhutan Luxury &amp; Private Tours</span
-                >
-                <span class="trip-card-sub">Customized Journey</span>
-                <span class="trip-card-meta">
-                  <span class="trip-card-meta-item"
-                    ><i class="fas fa-compass" aria-hidden="true"></i
-                    >YEAR ROUND</span
-                  >
-                  <span class="trip-card-meta-item"
-                    ><i class="fas fa-calendar-alt" aria-hidden="true"></i
-                    >CUSTOM DAYS</span
-                  >
-                </span>
-                <span class="trip-card-footer">
-                  <span class="trip-card-price">
-                    <span class="trip-card-price-label"
-                      >Starting from</span
-                    >
-                    <span class="trip-card-price-value"
-                      >Custom <small>/ per person</small></span
-                    >
-                  </span>
-                  <span class="trip-card-btn">View Trip Details</span>
-                </span>
-              </span>
-            </a>
+              </a>
+              <div class="trip-card-body">
+                <h3 class="trip-card-name">Bhutan Luxury &amp; Private Tours</h3>
+                <p class="trip-card-desc">
+                  This fully customized, privately guided journey covers
+                  Bhutan's finest lodges and landscapes, custom pricing per
+                  person, departing year-round.
+                </p>
+                <div class="trip-card-actions">
+                  <a href="contact.html" class="trip-card-btn-outline">Discover more</a>
+                  <a href="contact.html" class="trip-card-btn-outline">Plan your journey</a>
+                </div>
+              </div>
+            </article>
 
-            <a
-              href="#tour-trekking-culture"
-              class="trip-card img-reveal"
-              id="tour-trekking-culture"
-            >
-              <span class="trip-card-media">
+            <article class="trip-card img-reveal" id="tour-trekking-culture">
+              <a href="#tour-trekking-culture" class="trip-card-media">
                 <img
                   src="images/trekking.jpg"
                   alt="Bhutan Trekking and Culture Tour"
                   loading="lazy"
                 />
-              </span>
-              <span class="trip-card-body">
-                <span class="trip-card-name"
-                  >Bhutan Trekking &amp; Culture Tour</span
-                >
-                <span class="trip-card-sub">Adventure &amp; Heritage</span>
-                <span class="trip-card-meta">
-                  <span class="trip-card-meta-item"
-                    ><i class="fas fa-compass" aria-hidden="true"></i
-                    >OCT / NOV / MARCH / APRIL</span
-                  >
-                  <span class="trip-card-meta-item"
-                    ><i class="fas fa-calendar-alt" aria-hidden="true"></i
-                    >12 DAYS</span
-                  >
-                </span>
-                <span class="trip-card-footer">
-                  <span class="trip-card-price">
-                    <span class="trip-card-price-label"
-                      >Starting from</span
-                    >
-                    <span class="trip-card-price-value"
-                      >$3,595 <small>/ per person</small></span
-                    >
-                  </span>
-                  <span class="trip-card-btn">View Trip Details</span>
-                </span>
-              </span>
-            </a>
+              </a>
+              <div class="trip-card-body">
+                <h3 class="trip-card-name">Bhutan Trekking &amp; Culture Tour</h3>
+                <p class="trip-card-desc">
+                  This 12-day adventure combines Himalayan trekking with
+                  Bhutan's rich cultural heritage, from $3,595 per person,
+                  departing October, November, March or April.
+                </p>
+                <div class="trip-card-actions">
+                  <a href="#tour-trekking-culture" class="trip-card-btn-outline">Discover more</a>
+                  <a href="contact.html" class="trip-card-btn-outline">Plan your journey</a>
+                </div>
+              </div>
+            </article>
 
-            <a
-              href="#tour-colors-autumn"
-              class="trip-card img-reveal"
-              id="tour-colors-autumn"
-            >
-              <span class="trip-card-media">
+            <article class="trip-card img-reveal" id="tour-colors-autumn">
+              <a href="#tour-colors-autumn" class="trip-card-media">
                 <img
                   src="images/flags.jpg"
                   alt="The Colors of Autumn"
                   loading="lazy"
                 />
-              </span>
-              <span class="trip-card-body">
-                <span class="trip-card-name">The Colors of Autumn</span>
-                <span class="trip-card-sub">Bhutan Photography Tour</span>
-                <span class="trip-card-meta">
-                  <span class="trip-card-meta-item"
-                    ><i class="fas fa-compass" aria-hidden="true"></i
-                    >SEPTEMBER &amp; OCTOBER</span
-                  >
-                  <span class="trip-card-meta-item"
-                    ><i class="fas fa-calendar-alt" aria-hidden="true"></i
-                    >12 DAYS</span
-                  >
-                </span>
-                <span class="trip-card-footer">
-                  <span class="trip-card-price">
-                    <span class="trip-card-price-label"
-                      >Starting from</span
-                    >
-                    <span class="trip-card-price-value"
-                      >$3,595 <small>/ per person</small></span
-                    >
-                  </span>
-                  <span class="trip-card-btn">View Trip Details</span>
-                </span>
-              </span>
-            </a>
+              </a>
+              <div class="trip-card-body">
+                <h3 class="trip-card-name">The Colors of Autumn</h3>
+                <p class="trip-card-desc">
+                  This 12-day photography tour moves through Bhutan's golden
+                  valleys and crimson rice terraces, from $3,595 per person,
+                  departing September to October.
+                </p>
+                <div class="trip-card-actions">
+                  <a href="#tour-colors-autumn" class="trip-card-btn-outline">Discover more</a>
+                  <a href="contact.html" class="trip-card-btn-outline">Plan your journey</a>
+                </div>
+              </div>
+            </article>
 
-            <a
-              href="#tour-unique-festival"
-              class="trip-card img-reveal"
-              id="tour-unique-festival"
-            >
-              <span class="trip-card-media">
+            <article class="trip-card img-reveal" id="tour-unique-festival">
+              <a href="#tour-unique-festival" class="trip-card-media">
                 <img
                   src="images/festival.jpg"
                   alt="Bhutan Unique Festival Tour"
                   loading="lazy"
                 />
-              </span>
-              <span class="trip-card-body">
-                <span class="trip-card-name">Bhutan Unique Festival Tour</span>
-                <span class="trip-card-sub">Cultural Celebration</span>
-                <span class="trip-card-meta">
-                  <span class="trip-card-meta-item"
-                    ><i class="fas fa-compass" aria-hidden="true"></i
-                    >FEBRUARY / MARCH</span
-                  >
-                  <span class="trip-card-meta-item"
-                    ><i class="fas fa-calendar-alt" aria-hidden="true"></i
-                    >10 DAYS</span
-                  >
-                </span>
-                <span class="trip-card-footer">
-                  <span class="trip-card-price">
-                    <span class="trip-card-price-label"
-                      >Starting from</span
-                    >
-                    <span class="trip-card-price-value"
-                      >$2,995 <small>/ per person</small></span
-                    >
-                  </span>
-                  <span class="trip-card-btn">View Trip Details</span>
-                </span>
-              </span>
-            </a>
+              </a>
+              <div class="trip-card-body">
+                <h3 class="trip-card-name">Bhutan Unique Festival Tour</h3>
+                <p class="trip-card-desc">
+                  This 10-day cultural celebration is built around Bhutan's
+                  most vivid masked-dance festivals, from $2,995 per person,
+                  departing February to March.
+                </p>
+                <div class="trip-card-actions">
+                  <a href="#tour-unique-festival" class="trip-card-btn-outline">Discover more</a>
+                  <a href="contact.html" class="trip-card-btn-outline">Plan your journey</a>
+                </div>
+              </div>
+            </article>
           </div>
+
+          <a href="contact.html" class="tours-cta-banner img-reveal"
+            >Plan Your Journey</a
+          >
         </div>
       </section>
 
@@ -1176,13 +965,6 @@
             <article class="testimonial-card">
               <div class="testimonial-card-head">
                 <div class="testimonial-author">
-                  <div class="testimonial-avatar">
-                    <img
-                      src="https://i.pravatar.cc/100?img=12"
-                      alt="Gulliver Blog"
-                      loading="lazy"
-                    />
-                  </div>
                   <div>
                     <p class="testimonial-name">Gulliver Blog</p>
                     <p class="testimonial-date">2024-03-05</p>
@@ -1210,13 +992,6 @@
             <article class="testimonial-card">
               <div class="testimonial-card-head">
                 <div class="testimonial-author">
-                  <div class="testimonial-avatar">
-                    <img
-                      src="https://i.pravatar.cc/100?img=14"
-                      alt="Arun Khanal"
-                      loading="lazy"
-                    />
-                  </div>
                   <div>
                     <p class="testimonial-name">Arun Khanal</p>
                     <p class="testimonial-date">2024-03-03</p>
@@ -1244,13 +1019,6 @@
             <article class="testimonial-card">
               <div class="testimonial-card-head">
                 <div class="testimonial-author">
-                  <div class="testimonial-avatar">
-                    <img
-                      src="https://i.pravatar.cc/100?img=18"
-                      alt="Mark Toor"
-                      loading="lazy"
-                    />
-                  </div>
                   <div>
                     <p class="testimonial-name">Mark Toor</p>
                     <p class="testimonial-date">2024-03-03</p>
@@ -1294,13 +1062,6 @@
             <article class="testimonial-card">
               <div class="testimonial-card-head">
                 <div class="testimonial-author">
-                  <div class="testimonial-avatar">
-                    <img
-                      src="https://i.pravatar.cc/100?img=26"
-                      alt="Jason C"
-                      loading="lazy"
-                    />
-                  </div>
                   <div>
                     <p class="testimonial-name">Jason C</p>
                     <p class="testimonial-date">2024-03-20</p>
@@ -1327,13 +1088,6 @@
             <article class="testimonial-card">
               <div class="testimonial-card-head">
                 <div class="testimonial-author">
-                  <div class="testimonial-avatar">
-                    <img
-                      src="https://i.pravatar.cc/100?img=22"
-                      alt="nadia p"
-                      loading="lazy"
-                    />
-                  </div>
                   <div>
                     <p class="testimonial-name">nadia p</p>
                     <p class="testimonial-date">2024-03-06</p>
@@ -1360,13 +1114,6 @@
             <article class="testimonial-card">
               <div class="testimonial-card-head">
                 <div class="testimonial-author">
-                  <div class="testimonial-avatar">
-                    <img
-                      src="https://i.pravatar.cc/100?img=24"
-                      alt="Els C"
-                      loading="lazy"
-                    />
-                  </div>
                   <div>
                     <p class="testimonial-name">Els C</p>
                     <p class="testimonial-date">2024-03-05</p>

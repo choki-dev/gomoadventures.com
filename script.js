@@ -2,34 +2,6 @@
    GOMO ADVENTURES — script.js
 ═══════════════════════════════════════════════════════════════ */
 
-/* ─── Header scroll state (transparent-over-hero pages) ─── */
-const mainHeader = document.getElementById('mainHeader');
-
-function updateHeaderScrolled() {
-  if (!mainHeader) return;
-  mainHeader.classList.toggle('scrolled', window.scrollY > 40);
-}
-
-if (mainHeader) {
-  updateHeaderScrolled();
-  window.addEventListener('scroll', updateHeaderScrolled, { passive: true });
-}
-
-/* ─── Header search toggle ─── */
-const headerSearchToggle = document.getElementById('headerSearchToggle');
-const headerSearchBar    = document.getElementById('headerSearchBar');
-
-if (headerSearchToggle && headerSearchBar) {
-  headerSearchToggle.addEventListener('click', () => {
-    const open = headerSearchBar.classList.toggle('open');
-    headerSearchToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-    if (open) {
-      const input = headerSearchBar.querySelector('input');
-      if (input) input.focus();
-    }
-  });
-}
-
 /* ─── Hamburger / Mobile Drawer ─── */
 const hamburger       = document.getElementById('hamburger');
 const mobileDrawer    = document.getElementById('mobileDrawer');
@@ -73,25 +45,6 @@ drawerDropdowns.forEach(dropdown => {
     dropdown.classList.toggle('active');
   });
 });
-
-/* ─── Hero Slideshow ─── */
-const heroSlides  = document.querySelectorAll('.hero-slide');
-let currentHero   = 0;
-let heroTimer;
-
-function showHeroSlide(idx) {
-  heroSlides[currentHero].classList.remove('active');
-  currentHero = (idx + heroSlides.length) % heroSlides.length;
-  heroSlides[currentHero].classList.add('active');
-}
-
-function startHero() {
-  heroTimer = setInterval(() => showHeroSlide(currentHero + 1), 6000);
-}
-
-if (heroSlides.length) {
-  startHero();
-}
 
 /* ─── Bhutan Quote Slider ─── */
 const quoteSlides = document.querySelectorAll('.quote-slide');
@@ -443,12 +396,6 @@ galleryFilterBtns.forEach(btn => {
 
 /* ─── Scroll reveal ─── */
 
-/* Auto-tag testimonial avatars (opacity-only: inside circular clip) */
-document.querySelectorAll('.testimonial-avatar img').forEach(el => {
-  el.classList.add('img-reveal');
-  el.setAttribute('data-fade-only', '');
-});
-
 const revealEls = document.querySelectorAll('.img-reveal');
 
 /* Set initial hidden state via JS — images visible if JS never runs */
@@ -468,11 +415,6 @@ document.querySelectorAll('.tours-cards .img-reveal').forEach((el, i) => {
 /* Stagger brochure fan images */
 document.querySelectorAll('.brochure-img.img-reveal').forEach((el, i) => {
   el.style.transitionDelay = `${i * 0.13}s`;
-});
-
-/* Stagger testimonial avatars */
-document.querySelectorAll('.testimonial-avatar img.img-reveal').forEach((el, i) => {
-  el.style.transitionDelay = `${i * 0.07}s`;
 });
 
 /* Stagger gallery masonry items by column */
