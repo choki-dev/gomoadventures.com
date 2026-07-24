@@ -46,35 +46,6 @@ drawerDropdowns.forEach(dropdown => {
   });
 });
 
-/* ─── Bhutan Quote Slider ─── */
-const quoteSlides = document.querySelectorAll('.quote-slide');
-const quoteDots   = document.querySelectorAll('.quote-dot');
-let currentQuote  = 0;
-let quoteTimer;
-
-function showQuoteSlide(idx) {
-  quoteSlides[currentQuote].classList.remove('active');
-  quoteDots[currentQuote].classList.remove('active');
-  currentQuote = (idx + quoteSlides.length) % quoteSlides.length;
-  quoteSlides[currentQuote].classList.add('active');
-  quoteDots[currentQuote].classList.add('active');
-}
-
-function startQuoteSlider() {
-  quoteTimer = setInterval(() => showQuoteSlide(currentQuote + 1), 5000);
-}
-
-if (quoteSlides.length) {
-  quoteDots.forEach((dot, i) => {
-    dot.addEventListener('click', () => {
-      showQuoteSlide(i);
-      clearInterval(quoteTimer); startQuoteSlider();
-    });
-  });
-
-  startQuoteSlider();
-}
-
 /* ─── Trip Types Carousel ─── */
 const tripTrack = document.getElementById('tripTrack');
 if (tripTrack) {
@@ -126,86 +97,6 @@ if (tripTrack) {
     tripTrack.style.transform = tripOffset > 0
       ? `translateX(-${tripOffset * getCardWidth()}px)` : '';
   });
-}
-
-/* ─── Specials Peek Carousel ─── */
-const specialsTrack = document.getElementById('specialsTrack');
-if (specialsTrack) {
-  const specialsSlides  = Array.from(specialsTrack.querySelectorAll('.specials-slide'));
-  const specialsTotal   = specialsSlides.length;
-  const specialsCounter = document.getElementById('specialsCounter');
-  const specialsDesc    = document.getElementById('specialsDesc');
-  const specialsNext    = document.getElementById('specialsNext');
-  const specialsPrev    = document.getElementById('specialsPrev');
-  let specialsPos = 0;
-  let specialsResetHandler = null;
-
-  // Clone the first slide onto the end so the last real slide always has
-  // something to peek at, then snap back to the real slide once it passes —
-  // keeps every view framed the same way the first slide is.
-  const specialsClone = specialsSlides[0].cloneNode(true);
-  specialsClone.classList.remove('is-active');
-  specialsClone.setAttribute('aria-hidden', 'true');
-  specialsClone.querySelectorAll('a').forEach(a => a.setAttribute('tabindex', '-1'));
-  specialsTrack.appendChild(specialsClone);
-
-  const specialsTrackItems = Array.from(specialsTrack.children);
-
-  function getSpecialsStep() {
-    return specialsSlides[0].getBoundingClientRect().width + (parseFloat(getComputedStyle(specialsTrack).columnGap) || 0);
-  }
-
-  function moveSpecialsTrack(withTransition) {
-    specialsTrack.style.transition = withTransition ? '' : 'none';
-    specialsTrack.style.transform = `translateX(-${specialsPos * getSpecialsStep()}px)`;
-    specialsTrackItems.forEach((slide, i) => slide.classList.toggle('is-active', i === specialsPos));
-  }
-
-  function updateSpecialsMeta() {
-    const realIndex = specialsPos % specialsTotal;
-    if (specialsCounter) specialsCounter.textContent = `${realIndex + 1}/${specialsTotal}`;
-    if (specialsDesc) specialsDesc.textContent = specialsSlides[realIndex].dataset.desc || '';
-    if (specialsPrev) specialsPrev.classList.toggle('is-visible', specialsPos > 0);
-  }
-
-  if (specialsNext) {
-    specialsNext.addEventListener('click', () => {
-      if (specialsResetHandler) {
-        specialsTrack.removeEventListener('transitionend', specialsResetHandler);
-        specialsResetHandler = null;
-      }
-
-      specialsPos++;
-      moveSpecialsTrack(true);
-      updateSpecialsMeta();
-
-      if (specialsPos === specialsTotal) {
-        specialsResetHandler = () => {
-          specialsResetHandler = null;
-          specialsPos = 0;
-          moveSpecialsTrack(false);
-        };
-        specialsTrack.addEventListener('transitionend', specialsResetHandler, { once: true });
-      }
-    });
-  }
-
-  if (specialsPrev) {
-    specialsPrev.addEventListener('click', () => {
-      if (specialsPos === 0) return;
-
-      if (specialsResetHandler) {
-        specialsTrack.removeEventListener('transitionend', specialsResetHandler);
-        specialsResetHandler = null;
-      }
-
-      specialsPos--;
-      moveSpecialsTrack(true);
-      updateSpecialsMeta();
-    });
-  }
-
-  window.addEventListener('resize', () => moveSpecialsTrack(false));
 }
 
 /* ─── Newsletter Form ─── */
