@@ -729,6 +729,29 @@ b {
   font-size: 0.8rem;
 }
 
+.hero-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-ui);
+  font-size: 0.78rem;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--white);
+  background: var(--blue);
+  padding: 15px 30px;
+  transition: background var(--ease);
+}
+
+.hero-cta-btn:hover {
+  background: var(--blue-dark);
+}
+
+.hero-cta-btn i {
+  font-size: 0.8rem;
+}
+
 .hero-corner-btn {
   position: absolute;
   top: 28px;
@@ -737,7 +760,7 @@ b {
   display: inline-flex;
   align-items: center;
   padding: 11px 24px;
-  background: var(--accent);
+  background: var(--blue);
   color: var(--white);
   font-family: var(--font-ui);
   font-size: 0.68rem;
@@ -749,7 +772,7 @@ b {
 }
 
 .hero-corner-btn:hover {
-  background: var(--accent-dark);
+  background: var(--blue-dark);
 }
 
 @media (max-width: 640px) {
@@ -1008,103 +1031,27 @@ b {
 }
 
 /* ═══════════════════════════════════════════════════════════════
-   WHY TRAVEL WITH GOMO — catalog-style layout
+   FOUNDER INTRO
 ═══════════════════════════════════════════════════════════════ */
-.why-travel-section {
+.founder-intro-section {
   background: var(--bg-light);
 }
 
-.why-travel-inner {
-  display: grid;
-  grid-template-columns: minmax(320px, 1fr) 1fr;
-  align-items: stretch;
-  min-height: 620px;
-}
-
-.why-travel-images {
-  position: relative;
-  height: 100%;
-  order: 2;
-  overflow: hidden;
-  border-radius: 0;
-}
-
-.wt-main-img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  min-height: 420px;
-  object-fit: cover;
-  box-shadow: none;
-  transition: transform 0.6s ease;
-}
-
-.why-travel-images:hover .wt-main-img {
-  transform: scale(1.05);
-}
-
-.why-travel-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: clamp(48px, 6vw, 90px) clamp(32px, 6vw, 100px);
-}
-
-.why-travel-text h2 {
-  font-family: var(--font-display);
-  font-size: clamp(1.9rem, 3vw, 2.4rem);
-  font-weight: 300;
-  letter-spacing: 0;
-  text-transform: none;
-  color: var(--dark);
-  margin-bottom: 22px;
-  line-height: 1.25;
-}
-
-.why-travel-text p {
-  font-size: 0.95rem;
-  color: var(--mid);
-  line-height: 1.8;
-  max-width: 540px;
-  margin-bottom: 18px;
-}
-
-.wt-link {
-  display: inline-block;
-  margin-top: 10px;
-  font-size: 0.95rem;
-  color: var(--dark);
-  text-decoration: underline;
-  text-underline-offset: 3px;
-  width: fit-content;
-}
-
-.wt-link:hover {
-  color: var(--accent);
-}
-
-/* ═══════════════════════════════════════════════════════════════
-   WELCOME
-═══════════════════════════════════════════════════════════════ */
-.welcome-section {
-  background: var(--bg-light);
-}
-
-.welcome-inner {
+.founder-intro-inner {
   max-width: var(--max);
   margin: 0 auto;
   display: grid;
-  grid-template-columns: minmax(320px, 1.2fr) 1fr;
+  grid-template-columns: minmax(320px, 1fr) 1.2fr;
   gap: clamp(40px, 6vw, 80px);
   padding: clamp(48px, 6vw, 80px) 24px clamp(64px, 8vw, 90px);
   align-items: stretch;
 }
 
-.welcome-image-cell {
+.founder-intro-image-cell {
   position: relative;
 }
 
-.welcome-image-frame {
+.founder-intro-image-frame {
   width: 100%;
   min-height: 640px;
   border-radius: 0;
@@ -1112,84 +1059,58 @@ b {
   box-shadow: none;
 }
 
-.welcome-image {
+.founder-intro-image {
   width: 100%;
   height: 100%;
   min-height: 640px;
   object-fit: cover;
-  object-position: center;
+  object-position: top center;
 }
 
-.welcome-copy-cell {
+.founder-intro-copy-cell {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
 }
 
-.welcome-copy-inner {
+.founder-intro-copy-inner {
   position: relative;
   width: 100%;
-  max-width: 620px;
+  max-width: 640px;
 }
 
-.welcome-eyebrow {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  color: var(--accent);
-  font-size: 0.78rem;
-  letter-spacing: 0.24em;
-  text-transform: uppercase;
-  margin-bottom: 1.2rem;
-}
-
-.welcome-heading {
+.founder-intro-quote {
   font-family: var(--font-display);
+  font-style: italic;
   font-weight: 300;
-  text-transform: none;
-  letter-spacing: 0;
-  font-size: clamp(2.3rem, 3.8vw, 3.7rem);
-  line-height: 1.1;
+  font-size: clamp(1.9rem, 3.2vw, 2.7rem);
+  line-height: 1.3;
   color: var(--dark);
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.6rem;
 }
 
-.welcome-watermark {
-  position: absolute;
-  top: 0;
-  right: 0;
-  font-family: var(--font-ui);
-  font-weight: 300;
-  text-transform: uppercase;
-  font-size: clamp(5rem, 12vw, 10rem);
-  line-height: 0.95;
-  color: rgba(27, 25, 19, 0.08);
-  pointer-events: none;
-  user-select: none;
-  z-index: 0;
-  white-space: nowrap;
-}
-
-.welcome-copy-text {
+.founder-intro-copy-text {
   position: relative;
   z-index: 1;
 }
 
-.welcome-body {
+.founder-intro-body {
   font-size: 0.95rem;
   color: var(--mid);
   line-height: 1.85;
   margin-bottom: 18px;
 }
 
-.welcome-closing {
-  color: var(--mid);
+.founder-intro-closing {
+  color: var(--dark);
+  font-style: italic;
 }
 
-.welcome-signature {
-  margin-top: 20px;
+.founder-intro-signature {
+  margin-top: 24px;
+  margin-bottom: 20px;
 }
 
-.welcome-sig-name {
+.founder-intro-sig-name {
   font-family: var(--font-ui);
   font-weight: 400;
   font-size: 0.95rem;
@@ -1197,51 +1118,49 @@ b {
   margin-bottom: 2px;
 }
 
-.welcome-sig-name span {
-  font-weight: 400;
-  font-size: 0.9em;
-  color: var(--mid);
-}
-
-.welcome-sig-role {
+.founder-intro-sig-role {
   font-size: 0.85rem;
   color: var(--mid);
 }
 
+.founder-intro-link {
+  display: inline-block;
+  font-size: 0.95rem;
+  color: var(--dark);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  width: fit-content;
+}
+
+.founder-intro-link:hover {
+  color: var(--blue);
+}
+
 @media (max-width: 900px) {
-  .welcome-inner {
+  .founder-intro-inner {
     grid-template-columns: 1fr;
   }
 
-  .welcome-image-frame {
+  .founder-intro-image-frame {
     min-height: 420px;
-  }
-
-  .welcome-watermark {
-    position: relative;
-    top: auto;
-    right: auto;
-    left: 0;
-    font-size: clamp(4rem, 11vw, 7rem);
-    margin-bottom: 1rem;
   }
 }
 
 @media (max-width: 640px) {
-  .welcome-inner {
+  .founder-intro-inner {
     padding: 36px 20px 48px;
     gap: 36px;
   }
 
-  .welcome-image-frame {
+  .founder-intro-image-frame {
     min-height: 300px;
   }
 
-  .welcome-heading {
-    font-size: 2.15rem;
+  .founder-intro-quote {
+    font-size: 1.6rem;
   }
 
-  .welcome-body {
+  .founder-intro-body {
     font-size: 0.98rem;
   }
 }
@@ -1620,6 +1539,58 @@ b {
 .tours-cta-banner:hover {
   background: var(--blue-dark);
   color: var(--white);
+}
+
+/* ── Full-width private/luxury band ── */
+.tours-luxury-band {
+  margin-top: 64px;
+}
+
+.tours-luxury-band-media {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  aspect-ratio: 21 / 9;
+}
+
+.tours-luxury-band-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.tours-luxury-band:hover .tours-luxury-band-media img {
+  transform: scale(1.05);
+}
+
+.tours-luxury-band-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(10, 12, 15, 0.35) 0%, rgba(10, 12, 15, 0.45) 100%);
+}
+
+.tours-luxury-band-text {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 32px;
+  text-align: center;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 300;
+  font-size: clamp(1.3rem, 2.8vw, 2rem);
+  line-height: 1.4;
+  color: var(--white);
+  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.45);
+}
+
+@media (max-width: 640px) {
+  .tours-luxury-band-media {
+    aspect-ratio: 4 / 5;
+  }
 }
 
 @media (max-width: 900px) {
@@ -2456,6 +2427,10 @@ b {
   text-shadow: 0 2px 16px rgba(0, 0, 0, 0.45);
 }
 
+.quote-slide-cta {
+  margin-top: 28px;
+}
+
 @media (max-width: 767px) {
   .quote-slider-section {
     height: 100vh;
@@ -2543,22 +2518,6 @@ b {
   position: relative;
 }
 
-.stories-watermark {
-  position: absolute;
-  top: -64px;
-  left: -6px;
-  font-family: var(--font-ui);
-  font-size: clamp(3.4rem, 8vw, 6.2rem);
-  font-weight: 300;
-  text-transform: uppercase;
-  letter-spacing: 0.02em;
-  color: transparent;
-  -webkit-text-stroke: 1px var(--border);
-  white-space: nowrap;
-  pointer-events: none;
-  z-index: 0;
-}
-
 .stories-eyebrow {
   position: relative;
   z-index: 1;
@@ -2616,10 +2575,6 @@ b {
   .stories-visual {
     max-width: 340px;
     margin: 0 auto;
-  }
-
-  .stories-watermark {
-    display: none;
   }
 
   .stories-copy {
@@ -5837,6 +5792,96 @@ b {
 
   .ti-closing {
     padding: 26px 22px;
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   LEGAL / INFO PAGES (Terms, Privacy, Festival Dates)
+═══════════════════════════════════════════════════════════════ */
+.legal-section {
+  padding: 100px 0;
+  background: var(--white);
+}
+
+.legal-inner {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.legal-updated {
+  font-size: 0.78rem;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 48px;
+}
+
+.legal-intro {
+  font-size: 0.98rem;
+  color: var(--mid);
+  line-height: 1.85;
+  margin-bottom: 48px;
+}
+
+.legal-block {
+  padding: 32px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.legal-block:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.legal-block-title {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 400;
+  color: var(--dark);
+  margin-bottom: 14px;
+}
+
+.legal-block p {
+  font-size: 0.94rem;
+  color: var(--mid);
+  line-height: 1.8;
+  margin-bottom: 14px;
+}
+
+.legal-block p:last-child {
+  margin-bottom: 0;
+}
+
+.legal-block ul {
+  padding-left: 20px;
+  margin-bottom: 14px;
+}
+
+.legal-block ul:last-child {
+  margin-bottom: 0;
+}
+
+.legal-block ul li {
+  font-size: 0.94rem;
+  color: var(--mid);
+  line-height: 1.8;
+  margin-bottom: 8px;
+  padding-left: 4px;
+}
+
+.legal-block ul li:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 640px) {
+  .legal-section {
+    padding: 56px 0 64px;
+  }
+
+  .legal-block {
+    padding: 26px 0;
   }
 }
 
