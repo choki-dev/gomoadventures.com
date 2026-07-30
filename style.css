@@ -2,8 +2,16 @@
    GOMO ADVENTURES — Stylesheet
    Layout: Editorial luxury travel (Singita-inspired)
    Colors: warm ink / cream / clay
-   Fonts: Cormorant Garamond (display) + Inter (ui)
+   Fonts: Gill Sans WGL (self-hosted)
 ═══════════════════════════════════════════════════════════════ */
+
+@font-face {
+  font-family: 'Gill Sans WGL';
+  src: url('fonts/gill-sans-wgl/Gill Sans WGL.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
 
 :root {
   --blue: #2B77C6;
@@ -26,9 +34,9 @@
   --bg-light: #F7F5F1;
   --white: #FFFFFF;
 
-  --font-ui: 'Inter', Arial, sans-serif;
-  --font-display: 'Cormorant Garamond', Georgia, serif;
-  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-ui: 'Gill Sans WGL', 'Gill Sans MT', 'Gill Sans', 'Jost', Arial, sans-serif;
+  --font-display: 'Gill Sans WGL', 'Gill Sans MT', 'Gill Sans', 'Jost', Arial, sans-serif;
+  --font-serif: 'Gill Sans WGL', 'Gill Sans MT', 'Gill Sans', 'Jost', Arial, sans-serif;
 
   --max: 1200px;
   --ease: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -86,6 +94,10 @@ select {
 strong,
 b {
   font-weight: 300;
+}
+
+em {
+  font-style: normal;
 }
 
 .container {
@@ -695,7 +707,7 @@ b {
 
 .hero-headline {
   font-family: var(--font-display);
-  font-style: italic;
+  font-style: normal;
   font-size: clamp(1.8rem, 3.6vw, 3.2rem);
   font-weight: 300;
   color: var(--white);
@@ -739,13 +751,13 @@ b {
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--white);
-  background: var(--blue);
-  padding: 15px 30px;
-  transition: background var(--ease);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+  padding-bottom: 6px;
+  transition: border-color var(--ease);
 }
 
 .hero-cta-btn:hover {
-  background: var(--blue-dark);
+  border-color: var(--white);
 }
 
 .hero-cta-btn i {
@@ -1035,25 +1047,24 @@ b {
 ═══════════════════════════════════════════════════════════════ */
 .founder-intro-section {
   background: var(--bg-light);
+  display: flex;
+  align-items: stretch;
+  min-height: 640px;
 }
 
 .founder-intro-inner {
-  max-width: var(--max);
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: minmax(320px, 1fr) 1.2fr;
-  gap: clamp(40px, 6vw, 80px);
-  padding: clamp(48px, 6vw, 80px) 24px clamp(64px, 8vw, 90px);
-  align-items: stretch;
+  display: contents;
 }
 
 .founder-intro-image-cell {
   position: relative;
+  flex: 0 0 50%;
+  overflow: hidden;
 }
 
 .founder-intro-image-frame {
   width: 100%;
-  min-height: 640px;
+  height: 100%;
   border-radius: 0;
   overflow: hidden;
   box-shadow: none;
@@ -1062,14 +1073,16 @@ b {
 .founder-intro-image {
   width: 100%;
   height: 100%;
-  min-height: 640px;
   object-fit: cover;
   object-position: top center;
 }
 
 .founder-intro-copy-cell {
+  flex: 1;
+  min-width: 0;
   display: flex;
   align-items: center;
+  padding: clamp(48px, 6vw, 80px) clamp(24px, 6vw, 72px);
 }
 
 .founder-intro-copy-inner {
@@ -1080,7 +1093,7 @@ b {
 
 .founder-intro-quote {
   font-family: var(--font-display);
-  font-style: italic;
+  font-style: normal;
   font-weight: 300;
   font-size: clamp(1.9rem, 3.2vw, 2.7rem);
   line-height: 1.3;
@@ -1102,7 +1115,7 @@ b {
 
 .founder-intro-closing {
   color: var(--dark);
-  font-style: italic;
+  font-style: normal;
 }
 
 .founder-intro-signature {
@@ -1137,23 +1150,29 @@ b {
 }
 
 @media (max-width: 900px) {
-  .founder-intro-inner {
-    grid-template-columns: 1fr;
+  .founder-intro-section {
+    flex-direction: column;
+    min-height: 0;
   }
 
-  .founder-intro-image-frame {
-    min-height: 420px;
+  .founder-intro-image-cell {
+    flex: none;
+    width: 100%;
+    height: 420px;
+  }
+
+  .founder-intro-copy-cell {
+    padding: 40px 24px 48px;
   }
 }
 
 @media (max-width: 640px) {
-  .founder-intro-inner {
-    padding: 36px 20px 48px;
-    gap: 36px;
+  .founder-intro-image-cell {
+    height: 320px;
   }
 
-  .founder-intro-image-frame {
-    min-height: 300px;
+  .founder-intro-copy-cell {
+    padding: 36px 20px 48px;
   }
 
   .founder-intro-quote {
@@ -1360,7 +1379,7 @@ b {
 ═══════════════════════════════════════════════════════════════ */
 .tours-section {
   padding: 100px 0;
-  background: var(--white);
+  background: var(--bg-light);
 }
 
 .tours-inner {
@@ -1431,6 +1450,7 @@ b {
   display: flex;
   flex-direction: column;
   background: var(--white);
+  border: 1px solid var(--border);
 }
 
 .trip-card-media {
@@ -1453,7 +1473,7 @@ b {
 .trip-card-body {
   display: flex;
   flex-direction: column;
-  padding: 22px 0 0;
+  padding: 24px 24px 28px;
 }
 
 .trip-card-duration {
@@ -1574,12 +1594,12 @@ b {
   position: absolute;
   inset: 0;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
-  padding: 0 32px;
+  padding: 0 32px 48px;
   text-align: center;
   font-family: var(--font-display);
-  font-style: italic;
+  font-style: normal;
   font-weight: 300;
   font-size: clamp(1.3rem, 2.8vw, 2rem);
   line-height: 1.4;
@@ -2037,47 +2057,22 @@ b {
   background: var(--white);
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
-  padding: 64px 0;
-}
-
-.founder-inner {
-  max-width: var(--max);
-  margin: 0 auto;
-  padding: 0 24px;
   display: flex;
-  align-items: center;
-  gap: 72px;
+  align-items: stretch;
+  min-height: 600px;
 }
 
-/* ── Image column — offset-block style ── */
+/* ── Image column — full-bleed to the left viewport edge ── */
 .founder-image-col {
-  flex: 0 0 280px;
-  flex-shrink: 0;
+  flex: 0 0 72%;
   position: relative;
-  padding: 48px 0 0 48px;
-}
-
-.ft-accent-block {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 82%;
-  height: 82%;
-  background: var(--blue);
-  opacity: 0.18;
-  z-index: 0;
-  border-radius: 0;
-}
-
-.founder-photo-wrap {
-  position: relative;
-  z-index: 1;
+  overflow: hidden;
 }
 
 .founder-photo {
   display: block;
   width: 100%;
-  height: 280px;
+  height: 100%;
   object-fit: cover;
   object-position: top center;
   border-radius: 0;
@@ -2087,8 +2082,8 @@ b {
 /* Experience badge */
 .founder-badge {
   position: absolute;
-  bottom: -20px;
-  right: -20px;
+  bottom: 28px;
+  right: 28px;
   z-index: 2;
   background: var(--white);
   border-left: 4px solid var(--blue);
@@ -2099,6 +2094,14 @@ b {
   box-shadow: none;
   border-radius: 0;
   min-width: 140px;
+}
+
+.founder-inner {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  padding: 64px 48px;
 }
 
 .badge-number {
@@ -2231,36 +2234,34 @@ b {
 
 /* Responsive */
 @media (max-width: 900px) {
-  .founder-inner {
+  .founder-section {
     flex-direction: column;
-    gap: 48px;
+    min-height: 0;
   }
 
   .founder-image-col {
     flex: none;
     width: 100%;
-    max-width: 420px;
-    padding: 36px 0 0 36px;
+    height: 360px;
   }
 
-  .founder-photo {
-    height: 360px;
+  .founder-inner {
+    padding: 40px 24px;
   }
 }
 
 @media (max-width: 640px) {
   .founder-image-col {
-    max-width: 340px;
-    padding: 28px 0 0 28px;
-  }
-
-  .founder-photo {
     height: 300px;
   }
 
+  .founder-inner {
+    padding: 32px 20px;
+  }
+
   .founder-badge {
-    bottom: -14px;
-    right: -14px;
+    bottom: 14px;
+    right: 14px;
     min-width: 120px;
     padding: 10px 14px;
   }
@@ -2419,7 +2420,7 @@ b {
 
 .quote-slide-text {
   font-family: var(--font-display);
-  font-style: italic;
+  font-style: normal;
   font-weight: 300;
   font-size: clamp(1.4rem, 3vw, 2.2rem);
   line-height: 1.45;
@@ -2443,147 +2444,6 @@ b {
 
   .quote-slide-content {
     padding: 0 22px;
-  }
-}
-
-/* ═══════════════════════════════════════════════════════════════
-   OUR STORIES — editorial split showcase
-═══════════════════════════════════════════════════════════════ */
-.stories-section {
-  position: relative;
-  background: var(--white);
-  padding: 100px 0;
-  overflow: hidden;
-}
-
-.stories-inner {
-  max-width: var(--max);
-  margin: 0 auto;
-  padding: 0 24px;
-  display: grid;
-  grid-template-columns: 0.95fr 1.05fr;
-  align-items: center;
-  gap: 72px;
-}
-
-/* ---- visual: offset photo collage + orbiting play badge ---- */
-.stories-visual {
-  position: relative;
-  aspect-ratio: 4 / 5;
-  max-width: 460px;
-}
-
-.stories-visual::before {
-  content: '';
-  position: absolute;
-  top: -22px;
-  left: -22px;
-  width: 100%;
-  height: 100%;
-  background: var(--blue);
-  opacity: 0.18;
-  border-radius: 0;
-  z-index: 0;
-}
-
-.stories-img-back {
-  position: absolute;
-  inset: 0;
-  width: 78%;
-  height: 78%;
-  object-fit: cover;
-  border-radius: 0;
-  top: auto;
-  bottom: -44px;
-  right: -44px;
-  left: auto;
-  filter: grayscale(0.25) brightness(0.75);
-  box-shadow: none;
-  z-index: 1;
-}
-
-.stories-img-front {
-  position: absolute;
-  inset: 0;
-  width: 78%;
-  height: 78%;
-  object-fit: cover;
-  border-radius: 0;
-  box-shadow: none;
-  z-index: 2;
-}
-
-/* ---- copy ---- */
-.stories-copy {
-  position: relative;
-}
-
-.stories-eyebrow {
-  position: relative;
-  z-index: 1;
-  font-family: var(--font-ui);
-  font-size: 0.72rem;
-  font-weight: 400;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: var(--blue);
-  margin-bottom: 14px;
-}
-
-.stories-heading {
-  position: relative;
-  z-index: 1;
-  font-family: var(--font-display);
-  font-size: clamp(2.2rem, 3.8vw, 3.2rem);
-  font-weight: 300;
-  letter-spacing: 0;
-  text-transform: none;
-  color: var(--blue);
-  margin-bottom: 20px;
-}
-
-.stories-sub {
-  position: relative;
-  z-index: 1;
-  font-family: var(--font-ui);
-  font-size: 1rem;
-  color: var(--mid);
-  max-width: 420px;
-  line-height: 1.75;
-  margin-bottom: 32px;
-}
-
-.stories-cta i {
-  margin-left: 10px;
-  transition: transform var(--ease);
-}
-
-.stories-cta:hover i {
-  transform: translateX(4px);
-}
-
-@media (max-width: 900px) {
-  .stories-section {
-    padding: 72px 0;
-  }
-
-  .stories-inner {
-    grid-template-columns: 1fr;
-    gap: 56px;
-  }
-
-  .stories-visual {
-    max-width: 340px;
-    margin: 0 auto;
-  }
-
-  .stories-copy {
-    text-align: center;
-  }
-
-  .stories-sub {
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
@@ -2617,7 +2477,7 @@ b {
 
 .newsletter-heading {
   font-family: var(--font-display);
-  font-style: italic;
+  font-style: normal;
   font-size: clamp(2rem, 3.4vw, 2.8rem);
   font-weight: 300;
   color: var(--dark);
@@ -3179,12 +3039,8 @@ b {
     height: 240px;
   }
 
-  .founder-image-col {
-    flex: 0 0 380px;
-  }
-
-  .founder-photo {
-    height: 420px;
+  .founder-section {
+    min-height: 480px;
   }
 
   .brochure-inner {
@@ -3654,16 +3510,8 @@ b {
     display: block !important;
   }
 
-  .founder-inner {
-    gap: 28px;
-  }
-
   .founder-image-col {
-    padding: 24px 0 0 24px;
-  }
-
-  .founder-photo {
-    height: 280px;
+    height: 260px;
   }
 }
 
@@ -3694,9 +3542,12 @@ b {
 
   .tours-inner,
   .testimonials-inner,
-  .brochure-inner,
-  .founder-inner {
+  .brochure-inner {
     padding: 0 12px;
+  }
+
+  .founder-inner {
+    padding: 24px 12px;
   }
 
   .brochure-images {
@@ -3783,7 +3634,7 @@ b {
 
 .page-hero-title {
   font-family: var(--font-display);
-  font-style: italic;
+  font-style: normal;
   font-size: clamp(2.4rem, 5.5vw, 4rem);
   font-weight: 300;
   color: var(--white);
@@ -3884,7 +3735,7 @@ b {
 
 .sovereign-lead {
   font-family: var(--font-display);
-  font-style: italic;
+  font-style: normal;
   font-size: 1.15rem;
   color: var(--dark);
   line-height: 1.7;
@@ -3925,7 +3776,7 @@ b {
 
 .bhutan-cta-content h2 {
   font-family: var(--font-display);
-  font-style: italic;
+  font-style: normal;
   font-weight: 300;
   font-size: clamp(1.5rem, 3.5vw, 2.3rem);
   color: var(--white);
@@ -4112,7 +3963,7 @@ b {
 
 .stay-story-lead {
   font-family: var(--font-ui);
-  font-style: italic;
+  font-style: normal;
   font-weight: 400;
   font-size: 1.05rem;
   color: var(--blue-dark);
@@ -5769,7 +5620,7 @@ b {
 
 .ti-closing p {
   font-size: 1rem;
-  font-style: italic;
+  font-style: normal;
   color: var(--dark);
   line-height: 1.8;
 }
@@ -5947,7 +5798,7 @@ b {
 
 .trip-hero-title {
   font-family: var(--font-display);
-  font-style: italic;
+  font-style: normal;
   font-size: clamp(2.3rem, 5vw, 3.6rem);
   font-weight: 300;
   letter-spacing: 0;
@@ -6146,7 +5997,7 @@ b {
 /* ── Overview ── */
 .trip-pull-quote {
   font-family: var(--font-ui);
-  font-style: italic;
+  font-style: normal;
   font-weight: 400;
   font-size: 1.4rem;
   color: var(--blue-dark);
