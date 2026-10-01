@@ -4547,6 +4547,324 @@ a.footer-contact-item:hover {
   }
 }
 
+/* ── Bhutanese Culture page ── */
+
+/* Greeting intro */
+.cx-greeting {
+  background: var(--bg-light);
+  padding: 120px 0;
+}
+
+.cx-greeting-inner {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 24px;
+  display: grid;
+  grid-template-columns: 5fr 6fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.cx-greeting-word {
+  border-right: 1px solid var(--border);
+  padding-right: 48px;
+}
+
+.cx-greeting-big {
+  font-family: var(--font-display);
+  font-weight: 300;
+  font-size: clamp(2.8rem, 6vw, 5rem);
+  line-height: 1.02;
+  color: var(--accent);
+}
+
+.cx-greeting-note {
+  margin-top: 18px;
+  font-size: 0.72rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.cx-greeting-lead {
+  font-family: var(--font-display);
+  font-weight: 300;
+  font-size: clamp(1.5rem, 2.6vw, 2.1rem);
+  line-height: 1.35;
+  color: var(--dark);
+  margin-bottom: 24px;
+}
+
+.cx-greeting-body {
+  font-size: 0.98rem;
+  line-height: 1.85;
+  color: var(--mid);
+}
+
+/* Full-width alternating panels */
+.cx-panel {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 82vh;
+  background: var(--white);
+}
+
+.cx-panel-reverse {
+  background: var(--bg-light);
+}
+
+.cx-panel-reverse .cx-panel-media {
+  order: 2;
+}
+
+.cx-panel-media {
+  position: relative;
+  overflow: hidden;
+}
+
+.cx-panel-media img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.cx-panel:hover .cx-panel-media img {
+  transform: scale(1.04);
+}
+
+.cx-panel-text {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px clamp(32px, 7vw, 112px);
+  overflow: hidden;
+}
+
+/* Giant outlined numeral behind the text */
+.cx-panel-num {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  font-family: var(--font-display);
+  font-size: clamp(8rem, 16vw, 15rem);
+  font-weight: 300;
+  line-height: 0.8;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--blush);
+  opacity: 0.6;
+  pointer-events: none;
+  user-select: none;
+}
+
+.cx-panel-reverse .cx-panel-num {
+  right: auto;
+  left: 40px;
+}
+
+.cx-panel-kicker {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 0.72rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 18px;
+}
+
+.cx-panel-kicker::before {
+  content: '';
+  width: 32px;
+  height: 1px;
+  background: var(--accent);
+}
+
+.cx-panel-title {
+  position: relative;
+  font-family: var(--font-display);
+  font-weight: 300;
+  font-size: clamp(2.1rem, 4vw, 3.2rem);
+  line-height: 1.1;
+  color: var(--dark);
+  margin-bottom: 24px;
+}
+
+.cx-panel-body {
+  position: relative;
+  max-width: 440px;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.85;
+  color: var(--mid);
+}
+
+/* Codes & crafts — dark band */
+.cx-band {
+  background: var(--dark);
+  color: var(--white);
+  padding: 120px 0;
+}
+
+.cx-band-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.cx-band-eyebrow {
+  text-align: center;
+  font-size: 0.72rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--blush);
+  margin-bottom: 64px;
+}
+
+.cx-band-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.cx-band-col {
+  padding: 8px 56px;
+}
+
+.cx-band-col + .cx-band-col {
+  border-left: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.cx-band-title {
+  font-family: var(--font-display);
+  font-weight: 300;
+  font-size: clamp(1.7rem, 3vw, 2.3rem);
+  line-height: 1.2;
+  margin-bottom: 18px;
+}
+
+.cx-band-col p {
+  font-size: 0.95rem;
+  font-weight: 300;
+  line-height: 1.85;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+/* Closing invitation */
+.cx-closing {
+  background: var(--white);
+  padding: 130px 0;
+  text-align: center;
+}
+
+.cx-closing-inner {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.cx-closing-text {
+  font-family: var(--font-display);
+  font-weight: 300;
+  font-size: clamp(1.8rem, 3.6vw, 2.8rem);
+  line-height: 1.3;
+  color: var(--dark);
+  margin-bottom: 36px;
+}
+
+.cx-closing-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--dark);
+  border-bottom: 1px solid var(--accent);
+  padding-bottom: 6px;
+  transition: color var(--ease), border-color var(--ease);
+}
+
+.cx-closing-link:hover {
+  color: var(--blue);
+  border-color: var(--blue);
+}
+
+@media (max-width: 900px) {
+  .cx-greeting {
+    padding: 80px 0;
+  }
+
+  .cx-greeting-inner {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .cx-greeting-word {
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+    padding: 0 0 32px;
+  }
+
+  .cx-panel {
+    grid-template-columns: 1fr;
+    min-height: 0;
+  }
+
+  .cx-panel-reverse .cx-panel-media {
+    order: 0;
+  }
+
+  .cx-panel-media {
+    aspect-ratio: 4 / 3;
+  }
+
+  .cx-panel-text {
+    padding: 64px 24px 72px;
+  }
+
+  .cx-panel-num {
+    top: 24px;
+    right: 16px;
+    font-size: 7rem;
+  }
+
+  .cx-panel-reverse .cx-panel-num {
+    left: auto;
+    right: 16px;
+  }
+
+  .cx-band {
+    padding: 80px 0;
+  }
+
+  .cx-band-eyebrow {
+    margin-bottom: 40px;
+  }
+
+  .cx-band-cols {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .cx-band-col {
+    padding: 0;
+  }
+
+  .cx-band-col + .cx-band-col {
+    border-left: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    padding-top: 40px;
+  }
+
+  .cx-closing {
+    padding: 88px 0;
+  }
+}
+
 /* Closing image band */
 .ab-closing {
   height: 80vh;
