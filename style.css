@@ -7408,6 +7408,51 @@ a.footer-contact-item:hover {
   color: var(--white);
 }
 
+/* Trip photo in place of the route map */
+.trip-photo-img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+}
+
+/* Single-column highlights list */
+.trip-included-single {
+  grid-template-columns: 1fr;
+}
+
+/* Trek options (no day-by-day itinerary) */
+.trip-options {
+  list-style: none;
+  margin: 28px 0 0;
+  border-top: 1px solid var(--border);
+}
+
+.trip-options li {
+  display: flex;
+  align-items: baseline;
+  gap: 18px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.95rem;
+  color: var(--dark);
+  line-height: 1.6;
+}
+
+.trip-options-num {
+  flex: 0 0 76px;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.trip-enquire-btn {
+  display: inline-flex;
+  margin-top: 32px;
+  padding: 13px 28px;
+}
+
 /* ── Itinerary ── */
 .itin-header {
   display: flex;

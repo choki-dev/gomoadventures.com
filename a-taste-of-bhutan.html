@@ -1,0 +1,445 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A Taste of Bhutan – Bhutan Food &amp; Culture Tour | GOMO Adventures</title>
+  <meta name="description"
+    content="A Taste of Bhutan — a culinary adventure through Bhutanese cuisine and culture, led by cookbook author Punap Ugyen Wangchuk. August to November." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css?v=31" />
+</head>
+
+<body>
+  <!-- ══════════════════════════ MAIN HEADER -->
+  <header class="main-header" id="mainHeader">
+    <div class="header-inner">
+      <a href="index.html" class="site-logo">
+        <img src="images/gomo-logo.png" alt="GOMO Adventures" class="header-logo-img" />
+      </a>
+
+      <div class="header-right">
+        <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+          <span class="hamburger-icon"><span></span><span></span><span></span></span>
+          <span class="hamburger-label">Menu</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile nav drawer -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <img src="images/gomo-logo.png" alt="GOMO Adventures" class="drawer-logo" />
+      <button class="drawer-close-btn" id="drawerCloseBtn" aria-label="Close menu">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    <div class="drawer-search">
+      <input type="text" placeholder="Search for trips" id="headerSearchInput" />
+      <button class="drawer-search-btn" aria-label="Submit search">
+        <i class="fas fa-search"></i>
+      </button>
+    </div>
+    <nav class="drawer-nav">
+
+      <div class="drawer-dropdown">
+        <a href="about-us.html" class="drawer-link">About <i class="fas fa-chevron-down" style="font-size: 0.65rem; margin-left: 6px;"></i></a>
+        <div class="drawer-dropdown-menu">
+          <a href="about-us.html" class="drawer-dropdown-item">About Us</a>
+          <a href="meet-our-founder.html" class="drawer-dropdown-item">Meet Our Team</a>
+        </div>
+      </div>
+      <div class="drawer-dropdown">
+        <a href="why-bhutan.html" class="drawer-link">Why Bhutan <i class="fas fa-chevron-down" style="font-size: 0.65rem; margin-left: 6px;"></i></a>
+        <div class="drawer-dropdown-menu">
+          <a href="why-bhutan.html" class="drawer-dropdown-item">Why Bhutan</a>
+          <a href="accommodations.html" class="drawer-dropdown-item">Accommodations</a>
+          <a href="bhutanese-food.html" class="drawer-dropdown-item">Bhutanese Foods</a>
+          <a href="bhutanese-culture.html" class="drawer-dropdown-item">Bhutanese Culture</a>
+        </div>
+      </div>
+      <div class="drawer-dropdown">
+        <a href="index.html#our-trips" class="drawer-link">Our Trips <i class="fas fa-chevron-down" style="font-size: 0.65rem; margin-left: 6px;"></i></a>
+        <div class="drawer-dropdown-menu">
+          <a href="bhutan-kingdom-of-fungi.html" class="drawer-dropdown-item">Bhutan Kingdom of Fungi</a>
+          <a href="in-search-of-happiness.html" class="drawer-dropdown-item">In Search of Happiness</a>
+          <a href="create-a-masterpiece.html" class="drawer-dropdown-item">Bhutan Live Art Tour</a>
+          <a href="the-colours-of-spring.html" class="drawer-dropdown-item">Bhutan Through the Lens</a>
+          <a href="a-taste-of-bhutan.html" class="drawer-dropdown-item">Bhutan Food &amp; Culture Tour</a>
+          <a href="the-private-bhutan.html" class="drawer-dropdown-item">Bhutan Luxury &amp; Private Tours</a>
+          <a href="a-himalayan-love-story.html" class="drawer-dropdown-item">A Himalayan Love Story</a>
+          <a href="nomads-of-the-northern-frontier.html" class="drawer-dropdown-item">Bhutan Trekking &amp; Culture Tour</a>
+          <a href="the-colours-of-autumn.html" class="drawer-dropdown-item">The Colours of Autumn</a>
+          <a href="the-tshechu.html" class="drawer-dropdown-item">Bhutan Unique Festival Tour</a>
+        </div>
+      </div>
+      <a href="travel-info.html" class="drawer-link">Travel Info</a>
+      <a href="gallery.html" class="drawer-link">Gallery</a>
+    </nav>
+
+    <!-- Contact info under nav links -->
+    <div class="drawer-info-bar">
+      <div class="drawer-info-item">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>Changangkha, Thimphu, Bhutan</span>
+      </div>
+      <div class="drawer-info-item">
+        <i class="far fa-envelope"></i>
+        <a href="mailto:info@gomoadventures.com">info@gomoadventures.com</a>
+      </div>
+      <div class="drawer-info-item">
+        <i class="fas fa-phone"></i>
+        <a href="tel:+97517111783">+975 17111783</a>
+      </div>
+    </div>
+
+    <div class="drawer-footer">
+      <a href="contact.html" class="btn-reserve-mobile">Get in Touch</a>
+    </div>
+  </div>
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+
+  <main>
+    <!-- ══════════════════════════ TRIP HERO -->
+    <section class="trip-hero" style="background-image: url(images/food.jpg)">
+      <div class="trip-hero-overlay"></div>
+      <p class="hero-watermark">&copy; gomoadventures.com</p>
+
+      <div class="trip-hero-bottom">
+        <div>
+          <h1 class="trip-hero-title">A Taste of Bhutan</h1>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════ INFO BAR -->
+    <div class="trip-infobar">
+      <div class="trip-infobar-inner">
+        <div class="trip-infobar-price">
+          <span class="trip-infobar-days">Duration</span>
+          <span class="trip-infobar-value">13 Days</span>
+        </div>
+
+        <div class="trip-infobar-item">
+          <i class="fas fa-calendar-days"></i>
+          <span class="trip-infobar-item-text">
+            <span class="trip-infobar-item-label">Season</span>
+            <span class="trip-infobar-item-value">August / November</span>
+          </span>
+        </div>
+
+        <div class="trip-infobar-item">
+          <i class="fas fa-compass"></i>
+          <span class="trip-infobar-item-text">
+            <span class="trip-infobar-item-label">Tour Style</span>
+            <span class="trip-infobar-item-value">Food &amp; Culture</span>
+          </span>
+        </div>
+
+        <div class="trip-infobar-item">
+          <i class="fas fa-location-dot"></i>
+          <span class="trip-infobar-item-text">
+            <span class="trip-infobar-item-label">Starts In</span>
+            <span class="trip-infobar-item-value">Paro</span>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══════════════════════════ TRIP LAYOUT -->
+    <div class="trip-layout">
+
+      <!-- Sidebar -->
+      <aside class="trip-sidebar">
+        <nav class="trip-sidebar-nav" id="tripSidebarNav">
+          <a href="#trip-overview">Trip Overview</a>
+          <a href="#trip-highlights">Trip Highlights</a>
+          <a href="#trip-itinerary">Itinerary</a>
+        </nav>
+
+        <div class="trip-sidebar-cta">
+          <a href="contact.html" class="btn-reserve">Reserve Online</a>
+          <p class="trip-sidebar-phone">or call <a href="tel:+97517111783">+975 17111783</a></p>
+        </div>
+      </aside>
+
+      <!-- Main content -->
+      <div class="trip-content">
+
+        <!-- Trip Overview -->
+        <section class="trip-section" id="trip-overview">
+          <h2 class="trip-h2">Trip Overview</h2>
+          <p class="trip-pull-quote">Bhutan Food &amp; Culture Tour</p>
+          <div class="trip-overview-grid">
+            <div class="trip-overview-text">
+              <p>
+                Introducing the newest and most immersive way to experience Bhutan’s rich culture and traditions — through its culinary delights. Embark on a behind-the-scenes tour of Bhutanese cuisine, exploring the history and heritage of local dishes that have been carefully preserved and passed down for generations. Join us as we journey through the four corners of Bhutanese food, from the rice of the west to the wheat of the high altitudes. Our tour will introduce you to the unique dishes of each region and allow you to taste the flavors that make Bhutan’s cuisine so special.
+              </p>
+              <p>
+                Led by professional photographer and cookbook author Punap Ugyen Wangchuk, you’ll not only experience the best of Bhutanese cuisine, but you’ll also have the opportunity to learn how to make traditional dishes like the famous Ema Datshi. And don’t forget to embrace the Bhutanese love of spicy chilies, as no dish is complete without them.
+              </p>
+              <p>
+                As a special bonus, each guest will receive a copy of Punap Ugyen Wangchuk’s cookbook, “Authentic Bhutanese Cookbook,” filled with striking pictures of 27 popular Bhutanese dishes. Dedicated to foodie-adventurous souls worldwide, this cookbook is the perfect way to bring a piece of Bhutanese cuisine back home with you. Don’t miss out on this once-in-a-lifetime culinary experience in the land of the Thunder Dragon.
+              </p>
+            </div>
+
+            <div class="trip-map">
+              <div class="trip-map-frame">
+                <img src="images/village.jpg" alt="A farmhouse village in Bhutan" class="trip-photo-img" loading="lazy" />
+              </div>
+
+              <a href="contact.html" class="trip-map-btn">
+                <i class="fas fa-envelope"></i> Plan This Journey
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Trip Highlights -->
+        <section class="trip-section" id="trip-highlights">
+          <h2 class="trip-h2">Trip Highlights</h2>
+          <div class="trip-included-grid trip-included-single">
+            <div class="trip-included-col included">
+              <ul>
+                <li><i class="fas fa-check-circle"></i> Tasting and enjoying many different varieties of Bhutanese food</li>
+                <li><i class="fas fa-check-circle"></i> Learning to cook more than 15 different authentic dishes of Bhutan</li>
+                <li><i class="fas fa-check-circle"></i> Exploring food culture and different ingredients and vegetables</li>
+                <li><i class="fas fa-check-circle"></i> Learning how to make butter and cottage cheese and their delicacies</li>
+                <li><i class="fas fa-check-circle"></i> Learning to make Bhutanese salads of different types</li>
+                <li><i class="fas fa-check-circle"></i> Learning to make momos (dumplings) and different noodles</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Itinerary -->
+        <section class="trip-section" id="trip-itinerary">
+          <div class="itin-header">
+            <h2 class="trip-h2" style="margin-bottom: 0;">Itinerary</h2>
+            <button type="button" class="itin-toggle-all" id="itinToggleAll">
+              Open All Days
+            </button>
+          </div>
+
+          <div class="itin-list" id="itinList">
+
+            <details class="itin-day" open>
+              <summary>
+                <span class="itin-day-label">Day 1</span>
+                <span class="itin-day-title">Paro</span>
+                <span class="itin-day-toggle"><i class="fas fa-chevron-down"></i></span>
+              </summary>
+              <div class="itin-day-body">
+                <p>Arrive in Bhutan and drive to Thimphu, the capital city of Bhutan; the drive takes about one hour. We will refresh ourselves with a short nature hike, so that you sleep better and connect with nature. Dinner at one of the authentic, popular local restaurants in Thimphu.</p>
+              </div>
+            </details>
+
+            <details class="itin-day">
+              <summary>
+                <span class="itin-day-label">Day 2</span>
+                <span class="itin-day-title">Thimphu</span>
+                <span class="itin-day-toggle"><i class="fas fa-chevron-down"></i></span>
+              </summary>
+              <div class="itin-day-body">
+                <p>After breakfast, visit the tallest sitting Buddha, then Kaja Throm (the vegetable market) for shopping and to understand the local food culture and ingredients. Visit the Folk Heritage Museum for lunch and sightseeing. In the evening, Simply Bhutan for dinner and a cultural show.</p>
+              </div>
+            </details>
+
+            <details class="itin-day">
+              <summary>
+                <span class="itin-day-label">Day 3</span>
+                <span class="itin-day-title">Thimphu</span>
+                <span class="itin-day-toggle"><i class="fas fa-chevron-down"></i></span>
+              </summary>
+              <div class="itin-day-body">
+                <p>After breakfast, drive to Begana and visit local homes to learn how to cook momos (dumplings) of different types and shapes, as well as homemade cookies. After lunch, a short hike to Cheri and a visit to Tango Buddhist university to see how they cook for hundreds of monks — participate in cooking and the offering, and have dinner with the monks.</p>
+              </div>
+            </details>
+
+            <details class="itin-day">
+              <summary>
+                <span class="itin-day-label">Day 4</span>
+                <span class="itin-day-title">Punakha</span>
+                <span class="itin-day-toggle"><i class="fas fa-chevron-down"></i></span>
+              </summary>
+              <div class="itin-day-body">
+                <p>Drive to Punakha and have an authentic Bhutanese breakfast at Dochula. Continue to Lampelri for tea and ceremonial snacks, then down to the lower valley to a homestay, where lunch of different dishes is prepared for us. After lunch, drive down to Lobesa and visit another home to observe and learn how to make roasted rice (zaw). Dinner at the hotel, again with a variety of dishes.</p>
+              </div>
+            </details>
+
+            <details class="itin-day">
+              <summary>
+                <span class="itin-day-label">Day 5</span>
+                <span class="itin-day-title">Punakha</span>
+                <span class="itin-day-toggle"><i class="fas fa-chevron-down"></i></span>
+              </summary>
+              <div class="itin-day-body">
+                <p>After breakfast, visit Punakha Dzong and hike to a homestay for an authentic lunch, learn to cook a few more dishes, and enjoy a hot stone bath and dinner. Learn to make butter, cheese, Bhutanese pizza and puffed rice (mazkhu).</p>
+              </div>
+            </details>
+
+            <details class="itin-day">
+              <summary>
+                <span class="itin-day-label">Day 6</span>
+                <span class="itin-day-title">Punakha / Wangdue</span>
+                <span class="itin-day-toggle"><i class="fas fa-chevron-down"></i></span>
+              </summary>
+              <div class="itin-day-body">
+                <p>After the overnight homestay, prepare a Bhutanese breakfast in the morning with dried yak or beef, ezay and butter tea. Relax and explore the village, then return for another delicious lunch. After lunch, drive to the nunnery for evening prayer and dinner with the nuns. Overnight at the hotel.</p>
+              </div>
+            </details>
+
+            <details class="itin-day">
+              <summary>
+                <span class="itin-day-label">Day 7</span>
+                <span class="itin-day-title">Trongsa / Bumthang</span>
+                <span class="itin-day-toggle"><i class="fas fa-chevron-down"></i></span>
+              </summary>
+              <div class="itin-day-body">
+                <p>After breakfast, drive to Bumthang via Trongsa, stopping at Sephu for lunch to learn to cook a popular Bhutanese lunch and enjoy it. On arrival in Bumthang, stroll through Chamkhar town and learn to cook authentic Bumthap meals for dinner.</p>
+              </div>
+            </details>
+
+            <details class="itin-day">
+              <summary>
+                <span class="itin-day-label">Day 8</span>
+                <span class="itin-day-title">Bumthang</span>
+                <span class="itin-day-toggle"><i class="fas fa-chevron-down"></i></span>
+              </summary>
+              <div class="itin-day-body">
+                <p>After a buckwheat pancake breakfast, visit some famous monasteries and temples and drive to the Tang valley. Check in to the Tang Ugyen Choling Heritage guest house and meet the author Kunzang Choden, who has written many books, including on the culture and tradition of food in Bhutan.</p>
+              </div>
+            </details>
+
+            <details class="itin-day">
+              <summary>
+                <span class="itin-day-label">Day 9</span>
+                <span class="itin-day-title">Bumthang</span>
+                <span class="itin-day-toggle"><i class="fas fa-chevron-down"></i></span>
+              </summary>
+              <div class="itin-day-body">
+                <p>A rest morning. In the afternoon, learn to cook a few more regional dishes and visit the palace museum, a temple and the village.</p>
+              </div>
+            </details>
+
+            <details class="itin-day">
+              <summary>
+                <span class="itin-day-label">Day 10</span>
+                <span class="itin-day-title">Phobjikha</span>
+                <span class="itin-day-toggle"><i class="fas fa-chevron-down"></i></span>
+              </summary>
+              <div class="itin-day-body">
+                <p>Drive back to Phobjikha, stopping in Trongsa for lunch and a visit to the Ta Dzong museum dedicated to the monarchy of Bhutan, with dinner at the Waterfall Cafe, Trongsa. Visit Gangtey Monastery and a homestay, and hike in the Phobjikha valley.</p>
+              </div>
+            </details>
+
+            <details class="itin-day">
+              <summary>
+                <span class="itin-day-label">Day 11</span>
+                <span class="itin-day-title">Paro</span>
+                <span class="itin-day-toggle"><i class="fas fa-chevron-down"></i></span>
+              </summary>
+              <div class="itin-day-body">
+                <p>Drive back to Paro, stopping in Yusuna village for meals and to see chili production, including red chili powder and how to make chili paste. Evening meal of jomja and lomba.</p>
+              </div>
+            </details>
+
+            <details class="itin-day">
+              <summary>
+                <span class="itin-day-label">Day 12</span>
+                <span class="itin-day-title">Paro / Tiger’s Nest</span>
+                <span class="itin-day-toggle"><i class="fas fa-chevron-down"></i></span>
+              </summary>
+              <div class="itin-day-body">
+                <p>Hike to Tiger’s Nest Monastery, with souvenir shopping and a farewell dinner in the evening.</p>
+              </div>
+            </details>
+
+            <details class="itin-day">
+              <summary>
+                <span class="itin-day-label">Day 13</span>
+                <span class="itin-day-title">Departure</span>
+                <span class="itin-day-toggle"><i class="fas fa-chevron-down"></i></span>
+              </summary>
+              <div class="itin-day-body">
+                <p>Departure to Bangkok, Delhi, Dhaka, Kathmandu or Singapore.</p>
+              </div>
+            </details>
+
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- ══════════════════════════ FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-main">
+      <div class="footer-cols">
+        <div class="footer-contact-list">
+          <a href="mailto:info@gomoadventures.com" class="footer-contact-item">
+            <span class="footer-contact-icon"><i class="far fa-envelope"></i></span>
+            <span class="footer-contact-text">
+              <span class="footer-contact-label">Email</span>
+              info@gomoadventures.com
+            </span>
+          </a>
+          <a href="tel:+97517111783" class="footer-contact-item">
+            <span class="footer-contact-icon"><i class="fas fa-phone"></i></span>
+            <span class="footer-contact-text">
+              <span class="footer-contact-label">Phone</span>
+              +975 17111783
+            </span>
+          </a>
+          <span class="footer-contact-item">
+            <span class="footer-contact-icon"><i class="fas fa-map-marker-alt"></i></span>
+            <span class="footer-contact-text">
+              <span class="footer-contact-label">Location</span>
+              Changangkha, Thimphu, Bhutan
+            </span>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-bottom-inner">
+        <div class="footer-legal-links">
+          <a href="terms-and-conditions.html">Terms & Conditions</a>
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="downloads/Tentative_Festival_Dates_2026.pdf" target="_blank" rel="noopener">Festival Dates</a>
+        </div>
+        <p class="footer-copy">
+          &copy; 2026 Gomo Adventures. All Rights Reserved. Website Designed &
+          Developed By
+          <a href="https://abit.bt/" target="_blank" rel="noopener">aBit Private Limited</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-top" id="backTop" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- ══════════════════════════ LIGHTBOX -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close image">
+      <i class="fas fa-times"></i>
+    </button>
+    <img class="lightbox-img" id="lightboxImg" src="" alt="" />
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
